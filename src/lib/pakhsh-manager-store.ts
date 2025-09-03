@@ -43,13 +43,26 @@ export async function getAllPakhshManagers(): Promise<PakhshManager[]> {
 
 export async function getPakhshManagerByUsername(username: string): Promise<PakhshManager | null> {
   const managers = await getStoredPakhshManagers();
-  return managers.find(manager => manager.username === username) || null;
+  console.log('Available pakhsh managers:', managers.map(m => m.username));
+  console.log('Looking for username:', username);
+  const found = managers.find(manager => manager.username === username) || null;
+  console.log('Found manager:', found ? 'Yes' : 'No');
+  return found;
 }
 
 export async function verifyPakhshManagerPassword(username: string, password: string): Promise<boolean> {
+  console.log('Verifying pakhsh manager password for:', username);
   const manager = await getPakhshManagerByUsername(username);
-  if (!manager) return false;
-  return bcrypt.compare(password, manager.password);
+  if (!manager) {
+    console.log('Manager not found for username:', username);
+    return false;
+  }
+  console.log('Manager found, comparing password...');
+  console.log('Provided password:', password);
+  console.log('Stored hash:', manager.password);
+  const result = await bcrypt.compare(password, manager.password);
+  console.log('Password comparison result:', result);
+  return result;
 }
 
 export async function addPakhshManager(managerData: Omit<PakhshManager, 'id' | 'password'> & { password: string }): Promise<PakhshManager> {

@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { getProducerByUsername, verifyProducerPassword } from '@/lib/producer-store';
 import { getAdminByUsername, verifyAdminPassword } from '@/lib/admin-store';
+import { getPakhshManagerByUsername, verifyPakhshManagerPassword } from '@/lib/pakhsh-manager-store';
 import { SignJWT } from 'jose';
 import type { User, Producer } from '@/types';
 
@@ -26,6 +27,11 @@ export async function POST(request: Request) {
       user = await getProducerByUsername(username);
       if (user) {
         isPasswordValid = await verifyProducerPassword(username, password);
+      }
+    } else if (role === 'pakhsh-manager') {
+      user = await getPakhshManagerByUsername(username);
+      if (user) {
+        isPasswordValid = await verifyPakhshManagerPassword(username, password);
       }
     } else {
       return NextResponse.json({ message: 'Invalid role specified' }, { status: 400 });

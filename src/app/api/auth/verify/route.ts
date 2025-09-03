@@ -7,6 +7,8 @@ export async function POST(request: NextRequest) {
   try {
     const { username, password } = await request.json();
 
+    console.log('Authentication attempt for username:', username);
+
     if (!username || !password) {
       return NextResponse.json(
         { error: 'نام کاربری و رمز عبور الزامی هستند.' },
@@ -41,10 +43,16 @@ export async function POST(request: NextRequest) {
 
     // Try pakhsh manager
     try {
+      console.log('Trying pakhsh manager authentication for:', username);
       const isValidPakhsh = await verifyPakhshManagerPassword(username, password);
+      console.log('Pakhsh manager password verification result:', isValidPakhsh);
+      
       if (isValidPakhsh) {
         const pakhshManager = await getPakhshManagerByUsername(username);
+        console.log('Found pakhsh manager:', pakhshManager ? 'Yes' : 'No');
+        
         if (pakhshManager) {
+          console.log('Returning pakhsh manager user data');
           return NextResponse.json({
             success: true,
             user: {
@@ -61,7 +69,7 @@ export async function POST(request: NextRequest) {
         }
       }
     } catch (error) {
-      console.log('Pakhsh manager verification failed:', error);
+      console.log('Pakhsh manager verification failed with error:', error);
     }
 
     // Try producer

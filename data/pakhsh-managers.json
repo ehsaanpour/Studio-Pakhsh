@@ -8,6 +8,15 @@
       "email": "pakhsh@test.com",
       "phone": "09123456789",
       "workplace": "واحد پخش"
+    },
+    {
+      "name": "مهدی فرمانزاده",
+      "username": "pakhsh",
+      "password": "$2b$10$TMa77TLT6U/oDjgK/PKIcOwxkL5idwrUVE.fmZaZVql0X0z2nKqU.",
+      "email": "",
+      "phone": "09129339309",
+      "workplace": "پخش هیسپان و پرس",
+      "id": "1756895288106"
     }
   ]
 }

@@ -218,10 +218,11 @@ export default function AdminPanelPage() {
           setProducers(producersList);
           setActiveTab('producers');
         } else if (userType === 'pakhsh-manager' && editingPakhshManager) {
-          const response = await fetch('/api/pakhsh-manager/add', {
-            method: 'POST',
+          const response = await fetch('/api/pakhsh-manager/update', {
+            method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
+              id: editingPakhshManager.id,
               name: newProducerName,
               username: newProducerUsername,
               password: newProducerPassword,
