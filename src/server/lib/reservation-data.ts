@@ -75,8 +75,28 @@ export async function updateReservationStatusServer(requestId: string, newStatus
     const reservations = await getStoredReservations();
     const index = reservations.findIndex(r => r.id === requestId);
     if (index !== -1) {
+      const reservation = reservations[index];
+      const currentDate = new Date();
+      
+      // Update the status
       reservations[index].status = newStatus;
-      reservations[index].updatedAt = new Date();
+      reservations[index].updatedAt = currentDate;
+      
+      // Handle dual confirmation logic
+      if (newStatus === 'admin_confirmed') {
+        reservations[index].adminConfirmedAt = currentDate;
+        // Check if pakhsh is also confirmed, if so, set to confirmed
+        if (reservation.pakhshConfirmedAt) {
+          reservations[index].status = 'confirmed';
+        }
+      } else if (newStatus === 'pakhsh_confirmed') {
+        reservations[index].pakhshConfirmedAt = currentDate;
+        // Check if admin is also confirmed, if so, set to confirmed
+        if (reservation.adminConfirmedAt) {
+          reservations[index].status = 'confirmed';
+        }
+      }
+      
       await saveReservations(reservations);
     } else {
       throw new Error('Reservation not found');
@@ -131,4 +151,3 @@ export async function deleteAllReservationsServer(): Promise<void> {
     throw error;
   }
 }
-

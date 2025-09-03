@@ -90,7 +90,9 @@ export interface StudioReservationRequest {
   details?: string;
   repetition?: Repetition;
   
-  status: 'new' | 'read' | 'confirmed' | 'cancelled' | 'finalized';
+  status: 'new' | 'read' | 'admin_confirmed' | 'pakhsh_confirmed' | 'confirmed' | 'cancelled' | 'finalized';
+  adminConfirmedAt?: Date;
+  pakhshConfirmedAt?: Date;
   submittedAt: Date;
   updatedAt?: Date;
   engineers?: string[];
@@ -104,6 +106,7 @@ export interface User {
   phone: string;
   workplace?: string;
   isAdmin?: boolean;
+  isPakhshManager?: boolean;
   profilePictureUrl?: string;
   password?: string; // Password is optional for the User interface, as it might not always be loaded
 }

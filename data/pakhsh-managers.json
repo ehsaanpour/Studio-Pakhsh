@@ -1,0 +1,13 @@
+{
+  "pakhshManagers": [
+    {
+      "id": "1",
+      "username": "pakhsh_manager",
+      "password": "$2b$10$TMa77TLT6U/oDjgK/PKIcOwxkL5idwrUVE.fmZaZVql0X0z2nKqU.",
+      "name": "مدیر پخش تست",
+      "email": "pakhsh@test.com",
+      "phone": "09123456789",
+      "workplace": "واحد پخش"
+    }
+  ]
+}

@@ -3,6 +3,7 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { getProducerByUsername, verifyProducerPassword } from './producer-store';
 import { getAdminByUsername, verifyAdminPassword } from './admin-store';
+import { getPakhshManagerByUsername, verifyPakhshManagerPassword } from './pakhsh-manager-store';
 import Cookies from 'js-cookie';
 import type { User } from '@/types';
 
@@ -11,6 +12,7 @@ interface AuthContextType {
   login: (username: string, password: string) => Promise<boolean>;
   logout: () => void;
   isAdmin: boolean;
+  isPakhshManager: boolean;
   updateProfile: (updatedUser: Partial<User>) => void;
 }
 
@@ -40,6 +42,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
             email: adminUser.email,
             phone: adminUser.phone,
             isAdmin: true,
+            isPakhshManager: false,
             profilePictureUrl: adminUser.profilePictureUrl,
           };
           setUser(userData);
@@ -48,7 +51,28 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         }
       }
 
-      // If not an admin, try producer login
+      // Then try to verify if it's a pakhsh manager account
+      const isValidPakhshPassword = await verifyPakhshManagerPassword(username, password);
+      if (isValidPakhshPassword) {
+        const pakhshManager = await getPakhshManagerByUsername(username);
+        if (pakhshManager) {
+          const userData: User = {
+            name: pakhshManager.name,
+            username: pakhshManager.username,
+            email: pakhshManager.email,
+            phone: pakhshManager.phone,
+            workplace: pakhshManager.workplace,
+            isAdmin: false,
+            isPakhshManager: true,
+            profilePictureUrl: pakhshManager.profilePictureUrl,
+          };
+          setUser(userData);
+          Cookies.set('user', JSON.stringify(userData), { expires: 1 });
+          return true;
+        }
+      }
+
+      // If not an admin or pakhsh manager, try producer login
       const isValidProducerPassword = await verifyProducerPassword(username, password);
       if (!isValidProducerPassword) {
         return false;
@@ -64,7 +88,9 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         username: producer.username,
         email: producer.email,
         phone: producer.phone,
-        isAdmin: producer.isAdmin || false,
+        workplace: producer.workplace,
+        isAdmin: false,
+        isPakhshManager: false,
       };
       setUser(userData);
       Cookies.set('user', JSON.stringify(userData), { expires: 1 });
@@ -92,9 +118,10 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   };
 
   const isAdmin = user?.isAdmin || false;
+  const isPakhshManager = user?.isPakhshManager || false;
 
   return (
-    <AuthContext.Provider value={{ user, login, logout, isAdmin, updateProfile }}>
+    <AuthContext.Provider value={{ user, login, logout, isAdmin, isPakhshManager, updateProfile }}>
       {children}
     </AuthContext.Provider>
   );

@@ -49,6 +49,48 @@
       "engineers": [
         "1752598417311"
       ]
+    },
+    {
+      "id": "test_new_request",
+      "type": "producer",
+      "requesterName": "test_producer",
+      "programName": "برنامه تست دوگانه",
+      "dateTime": {
+        "reservationDate": "2025-01-05T07:00:00.000Z",
+        "startTime": "10:00",
+        "endTime": "12:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2
+      },
+      "additionalServices": ["videowall"],
+      "submittedAt": "2025-01-02T10:00:00.000Z",
+      "status": "new"
+    },
+    {
+      "id": "test_admin_confirmed",
+      "type": "producer",
+      "requesterName": "test_producer",
+      "programName": "برنامه تست تایید ادمین",
+      "dateTime": {
+        "reservationDate": "2025-01-06T07:00:00.000Z",
+        "startTime": "14:00",
+        "endTime": "16:00"
+      },
+      "studio": "studio6",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2
+      },
+      "additionalServices": [],
+      "submittedAt": "2025-01-02T11:00:00.000Z",
+      "status": "admin_confirmed",
+      "adminConfirmedAt": "2025-01-02T12:00:00.000Z",
+      "updatedAt": "2025-01-02T12:00:00.000Z"
     }
   ]
 }

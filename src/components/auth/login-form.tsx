@@ -31,7 +31,7 @@ export function LoginForm() {
   const { toast } = useToast();
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
-  const { login, isAdmin } = useAuth();
+  const { login, isAdmin, isPakhshManager } = useAuth();
 
   const form = useForm<LoginFormValues>({
     resolver: zodResolver(loginFormSchema),
@@ -54,6 +54,8 @@ export function LoginForm() {
         // Redirect based on user role
         if (isAdmin) {
           router.push('/admin');
+        } else if (isPakhshManager) {
+          router.push('/pakhsh-management');
         } else {
           router.push('/producer');
         }

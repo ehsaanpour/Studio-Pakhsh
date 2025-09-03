@@ -16,6 +16,7 @@ import { format, parse } from 'date-fns-jalali';
 import faIR from 'date-fns-jalali/locale/fa-IR';
 import { Badge } from '@/components/ui/badge';
 import { addProducer, getAllProducers, deleteProducer, updateProducer } from '@/lib/producer-store';
+import { PakhshManager } from '@/lib/pakhsh-manager-store';
 import { useRouter } from 'next/navigation';
 import { useAuth } from '@/lib/auth-context';
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from '@/components/ui/alert-dialog';
@@ -80,6 +81,8 @@ const getStatusLabel = (status: StudioReservationRequest['status']): string => {
   switch (status) {
     case 'new': return 'جدید';
     case 'read': return 'خوانده شده';
+    case 'admin_confirmed': return 'تایید ادمین';
+    case 'pakhsh_confirmed': return 'تایید پخش';
     case 'confirmed': return 'تایید شده';
     case 'cancelled': return 'رد شده';
     case 'finalized': return 'نهایی شده';
@@ -91,6 +94,8 @@ const getStatusBadgeVariant = (status: StudioReservationRequest['status']): "def
   switch (status) {
     case 'new': return 'destructive';
     case 'read': return 'secondary';
+    case 'admin_confirmed': return 'outline';
+    case 'pakhsh_confirmed': return 'outline';
     case 'confirmed': return 'default'; // Uses primary color, good for positive
     case 'cancelled': return 'outline';
     case 'finalized': return 'default';
@@ -122,6 +127,11 @@ export default function AdminPanelPage() {
 
   const [editingProducer, setEditingProducer] = useState<Producer | null>(null);
   const [isEditing, setIsEditing] = useState(false);
+  const [userType, setUserType] = useState<'producer' | 'pakhsh-manager'>('producer');
+
+  // Pakhsh manager states
+  const [pakhshManagers, setPakhshManagers] = useState<PakhshManager[]>([]);
+  const [editingPakhshManager, setEditingPakhshManager] = useState<PakhshManager | null>(null);
 
   const [activeTab, setActiveTab] = useState('requests');
 
@@ -156,13 +166,31 @@ export default function AdminPanelPage() {
     };
     loadProducers();
 
+    const loadPakhshManagers = async () => {
+      try {
+        const managersResponse = await fetch('/api/pakhsh-manager/list');
+        if (managersResponse.ok) {
+          const managersData = await managersResponse.json();
+          setPakhshManagers(managersData);
+        }
+      } catch (error) {
+        console.error('Error loading pakhsh managers:', error);
+        toast({
+          title: "خطا",
+          description: "خطا در بارگذاری لیست مدیران پخش.",
+          variant: "destructive",
+        });
+      }
+    };
+    loadPakhshManagers();
+
   }, [isAdmin, router, toast]);
 
-  const newSystemRequests = allRequests.filter(req => req.status === 'new' || req.status === 'read');
+  const newSystemRequests = allRequests.filter(req => req.status === 'new' || req.status === 'read' || req.status === 'pakhsh_confirmed');
   const finalizedSystemRequests = allRequests.filter(req => req.status === 'confirmed' || req.status === 'finalized');
   const rejectedSystemRequests = allRequests.filter(req => req.status === 'cancelled');
 
-  const handleAddProducer = async (event: FormEvent<HTMLFormElement>) => {
+  const handleAddUser = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (!newProducerName || !newProducerUsername || !newProducerPassword || !newProducerPhone) {
       toast({
@@ -174,35 +202,106 @@ export default function AdminPanelPage() {
     }
 
     try {
-      await addProducer({
-        name: newProducerName,
-        username: newProducerUsername,
-        password: newProducerPassword,
-        email: newProducerEmail,
-        phone: newProducerPhone,
-      });
+      if (isEditing) {
+        // Handle editing
+        if (userType === 'producer' && editingProducer) {
+          await updateProducer(editingProducer.id, {
+            name: newProducerName,
+            username: newProducerUsername,
+            email: newProducerEmail,
+            phone: newProducerPhone,
+            workplace: newProducerWorkplace,
+            ...(newProducerPassword ? { password: newProducerPassword } : {}),
+          });
+          
+          const producersList = await getAllProducers();
+          setProducers(producersList);
+          setActiveTab('producers');
+        } else if (userType === 'pakhsh-manager' && editingPakhshManager) {
+          const response = await fetch('/api/pakhsh-manager/add', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              name: newProducerName,
+              username: newProducerUsername,
+              password: newProducerPassword,
+              email: newProducerEmail,
+              phone: newProducerPhone,
+              workplace: newProducerWorkplace,
+            }),
+          });
+          
+          if (!response.ok) throw new Error('Failed to update pakhsh manager');
+          
+          const managersResponse = await fetch('/api/pakhsh-manager/list');
+          if (managersResponse.ok) {
+            const managersData = await managersResponse.json();
+            setPakhshManagers(managersData);
+          }
+          setActiveTab('pakhsh-managers');
+        }
+      } else {
+        // Handle adding new user
+        if (userType === 'producer') {
+          await addProducer({
+            name: newProducerName,
+            username: newProducerUsername,
+            password: newProducerPassword,
+            email: newProducerEmail,
+            phone: newProducerPhone,
+            workplace: newProducerWorkplace,
+          });
+          
+          const producersList = await getAllProducers();
+          setProducers(producersList);
+          setActiveTab('producers');
+        } else {
+          const response = await fetch('/api/pakhsh-manager/add', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              name: newProducerName,
+              username: newProducerUsername,
+              password: newProducerPassword,
+              email: newProducerEmail,
+              phone: newProducerPhone,
+              workplace: newProducerWorkplace,
+            }),
+          });
+          
+          if (!response.ok) throw new Error('Failed to add pakhsh manager');
+          
+          const managersResponse = await fetch('/api/pakhsh-manager/list');
+          if (managersResponse.ok) {
+            const managersData = await managersResponse.json();
+            setPakhshManagers(managersData);
+          }
+          setActiveTab('pakhsh-managers');
+        }
+      }
       
       toast({
         title: "موفقیت",
-        description: `تهیه‌کننده "${newProducerName}" با موفقیت اضافه شد.`,
+        description: `${userType === 'producer' ? 'تهیه‌کننده' : 'مدیر پخش'} "${newProducerName}" با موفقیت ${isEditing ? 'بروزرسانی شد' : 'اضافه شد'}.`,
       });
       
+      // Reset form
       setNewProducerName('');
       setNewProducerUsername('');
       setNewProducerPassword('');
       setNewProducerEmail('');
       setNewProducerPhone('');
       setNewProducerWorkplace('');
-
-      setActiveTab('producers');
+      setEditingProducer(null);
+      setEditingPakhshManager(null);
+      setIsEditing(false);
+      setUserType('producer');
       
-      const producersList = await getAllProducers();
-      setProducers(producersList);
     } catch (error) {
-      console.error('Error adding producer:', error);
+      console.error('Error with user operation:', error);
       toast({
         title: "خطا",
-        description: "خطا در افزودن تهیه‌کننده. لطفاً دوباره تلاش کنید.",
+        description: `خطا در ${isEditing ? 'بروزرسانی' : 'افزودن'} ${userType === 'producer' ? 'تهیه‌کننده' : 'مدیر پخش'}. لطفاً دوباره تلاش کنید.`,
         variant: "destructive",
       });
     }
@@ -326,6 +425,55 @@ export default function AdminPanelPage() {
     }
   };
 
+  // Pakhsh Manager Functions
+  const handleEditPakhshManager = (manager: PakhshManager) => {
+    setEditingPakhshManager(manager);
+    setNewProducerName(manager.name);
+    setNewProducerWorkplace(manager.workplace || '');
+    setNewProducerUsername(manager.username);
+    setNewProducerPassword('');
+    setNewProducerEmail(manager.email || '');
+    setNewProducerPhone(manager.phone || '');
+    setUserType('pakhsh-manager');
+    setIsEditing(true);
+    setActiveTab('add-producer');
+  };
+
+  const handleDeletePakhshManager = async (managerId: string) => {
+    try {
+      const response = await fetch('/api/pakhsh-manager/remove', {
+        method: 'DELETE',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ id: managerId }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to delete pakhsh manager');
+      }
+
+      // Reload pakhsh managers list
+      const managersResponse = await fetch('/api/pakhsh-manager/list');
+      if (managersResponse.ok) {
+        const managersData = await managersResponse.json();
+        setPakhshManagers(managersData);
+      }
+
+      toast({
+        title: "موفقیت",
+        description: "مدیر پخش با موفقیت حذف شد.",
+      });
+    } catch (error) {
+      console.error('Error deleting pakhsh manager:', error);
+      toast({
+        title: "خطا",
+        description: "خطا در حذف مدیر پخش. لطفاً دوباره تلاش کنید.",
+        variant: "destructive",
+      });
+    }
+  };
+
   const handleDeleteAllRejectedRequests = async () => {
     try {
       await deleteAllRejectedReservations();
@@ -400,8 +548,8 @@ export default function AdminPanelPage() {
               ویرایش <Edit3 className="me-2 h-4 w-4" />
             </Link>
           </Button>
-          <Button onClick={() => handleUpdateRequestStatus(request.id, 'confirmed')} size="sm" variant="default" className="bg-green-600 hover:bg-green-700 text-white">
-            تایید <ThumbsUp className="me-2 h-4 w-4" /> 
+          <Button onClick={() => handleUpdateRequestStatus(request.id, 'admin_confirmed')} size="sm" variant="default" className="bg-green-600 hover:bg-green-700 text-white">
+            تایید ادمین <ThumbsUp className="me-2 h-4 w-4" /> 
           </Button>
           <Button onClick={() => handleUpdateRequestStatus(request.id, 'cancelled')} size="sm" variant="destructive">
             رد کردن <ThumbsDown className="me-2 h-4 w-4" />
@@ -470,10 +618,11 @@ export default function AdminPanelPage() {
         </CardHeader>
         <CardContent>
           <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-            <TabsList className="grid w-full grid-cols-3 mb-6">
+            <TabsList className="grid w-full grid-cols-4 mb-6">
               <TabsTrigger value="requests">مدیریت درخواست‌ها <ListChecks className="me-2 h-4 w-4"/></TabsTrigger>
               <TabsTrigger value="producers">مدیریت تهیه‌کنندگان <Users className="me-2 h-4 w-4"/></TabsTrigger>
-              <TabsTrigger value="add-producer">افزودن تهیه‌کننده <PlusSquare className="me-2 h-4 w-4"/></TabsTrigger>
+              <TabsTrigger value="pakhsh-managers">مدیریت پخش <UserCog className="me-2 h-4 w-4"/></TabsTrigger>
+              <TabsTrigger value="add-producer">افزودن کاربر <PlusSquare className="me-2 h-4 w-4"/></TabsTrigger>
             </TabsList>
             
             <TabsContent value="requests">
@@ -603,18 +752,102 @@ export default function AdminPanelPage() {
               </Card>
             </TabsContent>
 
+            <TabsContent value="pakhsh-managers">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-right">لیست مدیران پخش</CardTitle>
+                  <CardDescription className="text-right">مشاهده لیست مدیران پخش موجود و امکان ویرایش یا حذف آن‌ها.</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  {pakhshManagers.length === 0 ? (
+                    <div className="p-6 border border-dashed rounded-lg bg-muted/30 min-h-[150px] flex items-center justify-center" dir="rtl">
+                      <p className="text-muted-foreground text-center">
+                        هیچ مدیر پخشی یافت نشد. برای افزودن، به تب "افزودن کاربر" بروید.
+                      </p>
+                    </div>
+                  ) : (
+                    <div className="space-y-4" dir="rtl">
+                      {pakhshManagers.map(manager => (
+                        <Card key={manager.id} className="shadow-sm">
+                          <CardHeader>
+                            <CardTitle className="text-lg text-right">{manager.name}</CardTitle>
+                            <CardDescription className="text-right">
+                              {manager.workplace} (نام کاربری: {manager.username})
+                              <br />
+                              ایمیل: {manager.email} | تلفن: {manager.phone}
+                            </CardDescription>
+                          </CardHeader>
+                          <CardFooter className="flex justify-end gap-2">
+                            <Button 
+                              variant="outline" 
+                              size="sm" 
+                              onClick={() => handleEditPakhshManager(manager)}
+                            >
+                              ویرایش <Edit3 className="me-1 h-4 w-4" /> 
+                            </Button>
+                            <Button 
+                              variant="destructive" 
+                              size="sm" 
+                              onClick={() => handleDeletePakhshManager(manager.id)}
+                            >
+                              حذف <Trash2 className="me-1 h-4 w-4" /> 
+                            </Button>
+                          </CardFooter>
+                        </Card>
+                      ))}
+                    </div>
+                  )}
+                </CardContent>
+              </Card>
+            </TabsContent>
+
             <TabsContent value="add-producer">
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-right">{isEditing ? 'ویرایش تهیه‌کننده' : 'افزودن تهیه‌کننده جدید'}</CardTitle>
+                  <CardTitle className="text-right">
+                    {isEditing 
+                      ? (userType === 'producer' ? 'ویرایش تهیه‌کننده' : 'ویرایش مدیر پخش')
+                      : 'افزودن کاربر جدید'
+                    }
+                  </CardTitle>
                   <CardDescription className="text-right">
                     {isEditing 
-                      ? 'برای ویرایش اطلاعات تهیه‌کننده، فرم زیر را تکمیل کنید.'
-                      : 'برای افزودن یک تهیه‌کننده جدید به سیستم، فرم زیر را تکمیل کنید.'}
+                      ? `برای ویرایش اطلاعات ${userType === 'producer' ? 'تهیه‌کننده' : 'مدیر پخش'}، فرم زیر را تکمیل کنید.`
+                      : 'برای افزودن یک کاربر جدید به سیستم، نوع کاربر را انتخاب کرده و فرم زیر را تکمیل کنید.'
+                    }
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <form onSubmit={isEditing ? handleUpdateProducer : handleAddProducer} className="space-y-4" dir="rtl">
+                  {!isEditing && (
+                    <div className="mb-4" dir="rtl">
+                      <Label className="text-right">نوع کاربر *</Label>
+                      <div className="flex gap-4 mt-2">
+                        <label className="flex items-center">
+                          <input 
+                            type="radio" 
+                            name="userType" 
+                            value="producer" 
+                            checked={userType === 'producer'}
+                            onChange={(e) => setUserType(e.target.value as 'producer' | 'pakhsh-manager')}
+                            className="ml-2"
+                          />
+                          تهیه‌کننده
+                        </label>
+                        <label className="flex items-center">
+                          <input 
+                            type="radio" 
+                            name="userType" 
+                            value="pakhsh-manager" 
+                            checked={userType === 'pakhsh-manager'}
+                            onChange={(e) => setUserType(e.target.value as 'producer' | 'pakhsh-manager')}
+                            className="ml-2"
+                          />
+                          مدیر پخش
+                        </label>
+                      </div>
+                    </div>
+                  )}
+                  <form onSubmit={handleAddUser} className="space-y-4" dir="rtl">
                     <div>
                       <Label htmlFor="producerName" className="text-right">نام *</Label>
                       <Input 

@@ -19,12 +19,21 @@ import { cn } from "@/lib/utils";
 import { useAuth } from "@/lib/auth-context";
 import { useEffect, useState } from "react";
 
+interface NavItem {
+  href: string;
+  label: string;
+  icon: any;
+  adminOnly?: boolean;
+  pakhshOnly?: boolean;
+}
+
 // Updated navItems for Studio Reservation System
-const navItems = [
-  { href: "/admin", label: "پنل مدیریت", icon: ShieldCheck },
-  { href: "/engineer-assignment", label: "پنل اختصاص مهندس", icon: UserCog },
-  { href: "/excel-export", label: "خروجی اکسل", icon: FileSpreadsheet },
-  { href: "/engineer-shifts", label: "محاسبه شیفت مهندسین", icon: Calculator },
+const navItems: NavItem[] = [
+  { href: "/admin", label: "پنل مدیریت", icon: ShieldCheck, adminOnly: true },
+  { href: "/pakhsh-management", label: "پنل مدیریت پخش", icon: UserCog, pakhshOnly: true },
+  { href: "/engineer-assignment", label: "پنل اختصاص مهندس", icon: UserCog, adminOnly: true },
+  { href: "/excel-export", label: "خروجی اکسل", icon: FileSpreadsheet, adminOnly: true },
+  { href: "/engineer-shifts", label: "محاسبه شیفت مهندسین", icon: Calculator, adminOnly: true },
   { href: "/weekly-schedule", label: "برنامه هفتگی برنامه‌ها", icon: CalendarDays },
 ];
 
@@ -32,7 +41,7 @@ export function AppSidebar() {
   const pathname = usePathname();
   const router = useRouter();
   const { open, toggleSidebar, isMobile, state } = useSidebar();
-  const { user, isAdmin, logout } = useAuth();
+  const { user, isAdmin, isPakhshManager, logout } = useAuth();
   const [mounted, setMounted] = useState(false);
 
   const CollapseIcon = ChevronRight;
@@ -89,8 +98,10 @@ export function AppSidebar() {
               </Link>
             </SidebarMenuItem>
           {navItems.map((item) => {
-            const isAdminOnly = item.href === "/admin" || item.href === "/engineer-assignment" || item.href === "/excel-export" || item.href === "/engineer-shifts";
-            if (isAdminOnly && !isAdmin) {
+            if (item.adminOnly && !isAdmin) {
+              return null;
+            }
+            if (item.pakhshOnly && !isPakhshManager) {
               return null;
             }
             return (
@@ -114,15 +125,15 @@ export function AppSidebar() {
         <SidebarMenu>
           {user && (
             <SidebarMenuItem>
-              <Link href={isAdmin ? "/admin" : "/profile"} className="w-full">
+              <Link href={isAdmin ? "/admin" : isPakhshManager ? "/pakhsh-management" : "/profile"} className="w-full">
                 <SidebarMenuButton 
-                  isActive={pathname === (isAdmin ? "/admin" : "/profile")}
+                  isActive={pathname === (isAdmin ? "/admin" : isPakhshManager ? "/pakhsh-management" : "/profile")}
                   className="justify-start w-full" 
-                  tooltip={isAdmin ? "پنل مدیریت" : "پروفایل"}
+                  tooltip={isAdmin ? "پنل مدیریت" : isPakhshManager ? "پنل مدیریت پخش" : "پروفایل"}
                 >
                   <User className="h-5 w-5" />
                   <span className={cn(state === "collapsed" && !isMobile ? "sr-only" : "")}>
-                    {isAdmin ? "پنل مدیریت" : "پروفایل"}
+                    {isAdmin ? "پنل مدیریت" : isPakhshManager ? "پنل مدیریت پخش" : "پروفایل"}
                   </span>
                 </SidebarMenuButton>
               </Link>
@@ -161,4 +172,3 @@ export function AppSidebar() {
     </Sidebar>
   );
 }
-
