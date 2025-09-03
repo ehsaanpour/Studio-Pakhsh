@@ -1,0 +1,134 @@
+{
+  "producers": [
+    {
+      "id": "1753169477301",
+      "name": "کاوه تقوایی",
+      "username": "kaveh",
+      "password": "$2b$10$kvHq/fUGQaqlSDZxxjLSl.JghrC3tDLP3mzoKoNfV2QvHPbz4POeG",
+      "email": "Keveh@gmail.com",
+      "phone": "09362056342",
+      "isAdmin": false,
+      "workplace": "پرس"
+    },
+    {
+      "id": "1753169604889",
+      "name": "حسنی دخت",
+      "username": "hosnidokht",
+      "password": "$2b$10$rZr2oj8QNMSAUjpTrnk5fucUdAStguMeQEr8BVaJa5yjwyZUaLgYm",
+      "email": "hosnidokht@gmail.com",
+      "phone": "09123129131",
+      "isAdmin": false
+    },
+    {
+      "id": "1753169816219",
+      "name": "اسد",
+      "username": "asad",
+      "password": "$2b$10$9fUBpG2l.YAzzBlr20wqX.06IAPoM4xhT2Hy28bRkdE28tPJ8Z5kS",
+      "email": "asad@gmail.com",
+      "phone": "09127038230",
+      "isAdmin": false
+    },
+    {
+      "id": "1753774380203",
+      "name": "دربندی",
+      "username": "darbandi",
+      "password": "$2b$10$IibSKmVf0w/A8unF4BWKbeAKIpAX1ALVpQsLgY9jt9xNnWcaKgPeC",
+      "email": "darbandi@gmail.com",
+      "phone": "09123544741",
+      "isAdmin": false,
+      "workplace": "پرس"
+    },
+    {
+      "id": "1753886708170",
+      "name": "مهمان",
+      "username": "test",
+      "password": "$2b$10$4ZbVdsQct/IKqnMqcvSJN.DkaGe/WCabkjVBPMWdmwZBD97Au2G5K",
+      "email": "",
+      "phone": "000",
+      "isAdmin": false
+    },
+    {
+      "id": "1753977011481",
+      "name": "آیدا بلوکات",
+      "username": "Blucut",
+      "password": "$2b$10$MqJjP0J/IvLKVnOkD8/YXOankEPhAW3ZOdldCbAairaA30i/WgQR2",
+      "email": "aida.boloukat@gmail.com",
+      "phone": "09369934266",
+      "isAdmin": false
+    },
+    {
+      "id": "1754316626374",
+      "name": "خوش نویس",
+      "username": "khoshnevis",
+      "password": "$2b$10$z32EuDZG2o/yYy86G2VaEuWB65ZHXlcEcthtmcY1OeDZO7Qh.yMj.",
+      "email": "khoshnevis@gmail.com",
+      "phone": "09120877670",
+      "workplace": "پرس"
+    },
+    {
+      "id": "1754316706067",
+      "name": "حکمیان",
+      "username": "hakamian",
+      "password": "$2b$10$ejiqqpL9S5gH3za0MBcXEO9EfKh8fiqM51EquVRXvfjIGHRjlW5A.",
+      "email": "hhakamian@gmail.com",
+      "phone": "09125088277"
+    },
+    {
+      "id": "1754723071998",
+      "name": "یاسین بخشی",
+      "username": "yasin",
+      "password": "$2b$10$8Y5okK7h758.EM5EWNMg4OF7oo5Z5dOLrL5Xi0U4G3h/IJZdvCGs2",
+      "email": "bakhshi@gmail.com",
+      "phone": "09357449036"
+    },
+    {
+      "id": "1754739353315",
+      "name": "میدانی",
+      "username": "Meidani",
+      "password": "$2b$10$dB8aow9GT6adaWSr8.Glc.2TvueuOTa491bWGeZ/1FpW6i5oyCA0.",
+      "email": "meidani@gmail.com",
+      "phone": "09123032016"
+    },
+    {
+      "id": "1754744369165",
+      "name": "اسدی",
+      "username": "asadi",
+      "password": "$2b$10$qX5QXoGWIn32PR0.0uQXqOfp60A73EAJedotFny1qGLtmf0q349H.",
+      "email": "asadi@gmail.com",
+      "phone": "09376277721"
+    },
+    {
+      "id": "1754914575383",
+      "name": "احسان فتاحی",
+      "username": "fattahi",
+      "password": "$2b$10$CTS8WHLI9T74/drlu8L/huqSEMgdmpYZmYShw/Jr5l3leTctLyEba",
+      "email": "fattahi@gmail.com",
+      "phone": "09125908635"
+    },
+    {
+      "id": "1755420974803",
+      "name": "جواد عین آبادی",
+      "username": "javad",
+      "password": "$2b$10$ZXGVTG0g6b6T.E44rYSCG.UMnDOUZkhJK3YEFQ4ZV0Mr3ricSD86G",
+      "email": "eynabadi@gmail.com",
+      "phone": "09388600141",
+      "workplace": "پرس"
+    },
+    {
+      "id": "1755508156303",
+      "name": "حسین موسوی",
+      "username": "mousavi",
+      "password": "$2b$10$MI9w4MQQczq2yad1ioQoD.9IxsjwMB0OxYbHY.66hUD5KJmZuHUEq",
+      "email": "",
+      "phone": "09391614855"
+    },
+    {
+      "id": "1756198092902",
+      "name": "نوبخت",
+      "username": "nobakht",
+      "password": "$2b$10$o8zldftGFdomr3ulNLEdwuCMA6hNiUdmk7GQY3NsTQqGtBjj64Ama",
+      "email": "",
+      "phone": "09190187612"
+    }
+  ]
+}

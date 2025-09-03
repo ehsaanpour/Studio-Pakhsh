@@ -1,0 +1,3671 @@
+{
+  "reservations": [
+    {
+      "id": "1753718659622",
+      "type": "producer",
+      "requesterName": "کاوه تقوایی",
+      "programName": "اکونومیک",
+      "dateTime": {
+        "reservationDate": "2025-07-30T07:00:00.000Z",
+        "startTime": "09:00",
+        "endTime": "11:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2
+      },
+      "additionalServices": [],
+      "details": "",
+      "repetition": {
+        "type": "no_repetition"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "submittedAt": "2025-07-28T16:04:19.623Z",
+      "status": "cancelled",
+      "updatedAt": "2025-07-28T16:04:29.883Z"
+    },
+    {
+      "id": "1753780286392",
+      "type": "producer",
+      "requesterName": "کاوه تقوایی",
+      "programName": "بدون خط",
+      "dateTime": {
+        "reservationDate": "2025-07-29T20:30:00.000Z",
+        "startTime": "12:00",
+        "endTime": "20:30"
+      },
+      "studio": "studio6",
+      "studioServices": {
+        "serviceType": "without_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 8.5
+      },
+      "additionalServices": [
+        "videowall",
+        "makeup_artist",
+        "xdcam",
+        "crane",
+        "live_communication",
+        "service_staff"
+      ],
+      "details": "این برنامه نیاز به فنی برای ارتباط زنده اسکایپ یا زوم یا گوگل هست. علاوه بر ان نیروی کامل استودیو لازم دارد. ترجمه ندارد. ",
+      "repetition": {
+        "type": "no_repetition"
+      },
+      "engineers": [
+        "1753091480060",
+        "1754722674809"
+      ],
+      "engineerCount": 2,
+      "submittedAt": "2025-07-29T09:11:26.392Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-11T09:04:09.082Z"
+    },
+    {
+      "id": "1753978152186",
+      "type": "producer",
+      "requesterName": "آیدا بلوکات",
+      "programName": "ویکی",
+      "dateTime": {
+        "reservationDate": "2025-08-02T07:00:00.000Z",
+        "startTime": "21:30",
+        "endTime": "23:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1.5
+      },
+      "additionalServices": [],
+      "details": "برنامه به صورت لایو پخش میشود. ",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [
+        "1753091480060",
+        "1754722674809"
+      ],
+      "engineerCount": 2,
+      "submittedAt": "2025-07-31T16:09:12.186Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-11T09:04:57.515Z"
+    },
+    {
+      "id": "1753978152246",
+      "type": "producer",
+      "requesterName": "آیدا بلوکات",
+      "programName": "ویکی",
+      "dateTime": {
+        "reservationDate": "2025-08-09T07:00:00.000Z",
+        "startTime": "21:30",
+        "endTime": "23:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1.5
+      },
+      "additionalServices": [
+        "live_program"
+      ],
+      "details": "برنامه به صورت لایو پخش میشود. ",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [
+        "1753091480060"
+      ],
+      "engineerCount": 1,
+      "submittedAt": "2025-07-31T16:09:12.246Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-02T13:20:23.999Z"
+    },
+    {
+      "id": "1753978152301",
+      "type": "producer",
+      "requesterName": "آیدا بلوکات",
+      "programName": "ویکی",
+      "dateTime": {
+        "reservationDate": "2025-08-16T07:00:00.000Z",
+        "startTime": "21:30",
+        "endTime": "23:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1.5
+      },
+      "additionalServices": [
+        "live_program"
+      ],
+      "details": "برنامه به صورت لایو پخش میشود. ",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [
+        "1753091480060",
+        "1753091509592"
+      ],
+      "engineerCount": 2,
+      "submittedAt": "2025-07-31T16:09:12.301Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-29T15:10:32.340Z"
+    },
+    {
+      "id": "1753978152368",
+      "type": "producer",
+      "requesterName": "آیدا بلوکات",
+      "programName": "ویکی",
+      "dateTime": {
+        "reservationDate": "2025-08-23T07:00:00.000Z",
+        "startTime": "21:30",
+        "endTime": "23:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1.5
+      },
+      "additionalServices": [
+        "live_program"
+      ],
+      "details": "برنامه به صورت لایو پخش میشود. ",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [
+        "1753091480060"
+      ],
+      "engineerCount": 1,
+      "submittedAt": "2025-07-31T16:09:12.368Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-18T19:12:06.712Z"
+    },
+    {
+      "id": "1753978152420",
+      "type": "producer",
+      "requesterName": "آیدا بلوکات",
+      "programName": "ویکی",
+      "dateTime": {
+        "reservationDate": "2025-08-30T07:00:00.000Z",
+        "startTime": "21:30",
+        "endTime": "23:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1.5
+      },
+      "additionalServices": [
+        "live_program"
+      ],
+      "details": "برنامه به صورت لایو پخش میشود. ",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [
+        "1753091480060"
+      ],
+      "engineerCount": 1,
+      "submittedAt": "2025-07-31T16:09:12.420Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-30T19:04:35.704Z"
+    },
+    {
+      "id": "1753978152493",
+      "type": "producer",
+      "requesterName": "آیدا بلوکات",
+      "programName": "ویکی",
+      "dateTime": {
+        "reservationDate": "2025-09-06T07:00:00.000Z",
+        "startTime": "21:30",
+        "endTime": "23:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1.5
+      },
+      "additionalServices": [
+        "live_program"
+      ],
+      "details": "برنامه به صورت لایو پخش میشود. ",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "submittedAt": "2025-07-31T16:09:12.493Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-01T06:16:47.310Z"
+    },
+    {
+      "id": "1753978152558",
+      "type": "producer",
+      "requesterName": "آیدا بلوکات",
+      "programName": "ویکی",
+      "dateTime": {
+        "reservationDate": "2025-09-13T07:00:00.000Z",
+        "startTime": "21:30",
+        "endTime": "23:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1.5
+      },
+      "additionalServices": [
+        "live_program"
+      ],
+      "details": "برنامه به صورت لایو پخش میشود. ",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "submittedAt": "2025-07-31T16:09:12.558Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-01T06:16:04.306Z"
+    },
+    {
+      "id": "1753978152617",
+      "type": "producer",
+      "requesterName": "آیدا بلوکات",
+      "programName": "ویکی",
+      "dateTime": {
+        "reservationDate": "2025-09-20T07:00:00.000Z",
+        "startTime": "21:30",
+        "endTime": "23:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1.5
+      },
+      "additionalServices": [
+        "live_program"
+      ],
+      "details": "برنامه به صورت لایو پخش میشود. ",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "submittedAt": "2025-07-31T16:09:12.617Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-01T06:15:24.606Z"
+    },
+    {
+      "id": "1753978152671",
+      "type": "producer",
+      "requesterName": "آیدا بلوکات",
+      "programName": "ویکی",
+      "dateTime": {
+        "reservationDate": "2025-09-27T07:00:00.000Z",
+        "startTime": "21:30",
+        "endTime": "23:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1.5
+      },
+      "additionalServices": [
+        "live_program"
+      ],
+      "details": "برنامه به صورت لایو پخش میشود. ",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "submittedAt": "2025-07-31T16:09:12.672Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-01T06:14:57.120Z"
+    },
+    {
+      "id": "1753978152733",
+      "type": "producer",
+      "requesterName": "آیدا بلوکات",
+      "programName": "ویکی",
+      "dateTime": {
+        "reservationDate": "2025-10-04T07:00:00.000Z",
+        "startTime": "21:30",
+        "endTime": "23:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1.5
+      },
+      "additionalServices": [
+        "live_program"
+      ],
+      "details": "برنامه به صورت لایو پخش میشود. ",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "submittedAt": "2025-07-31T16:09:12.734Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-01T06:12:48.643Z"
+    },
+    {
+      "id": "1753978152800",
+      "type": "producer",
+      "requesterName": "آیدا بلوکات",
+      "programName": "ویکی",
+      "dateTime": {
+        "reservationDate": "2025-10-11T07:00:00.000Z",
+        "startTime": "21:30",
+        "endTime": "23:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1.5
+      },
+      "additionalServices": [
+        "live_program"
+      ],
+      "details": "برنامه به صورت لایو پخش میشود. ",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "submittedAt": "2025-07-31T16:09:12.800Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-01T06:11:59.747Z"
+    },
+    {
+      "id": "1753978152859",
+      "type": "producer",
+      "requesterName": "آیدا بلوکات",
+      "programName": "ویکی",
+      "dateTime": {
+        "reservationDate": "2025-10-18T07:00:00.000Z",
+        "startTime": "21:30",
+        "endTime": "23:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1.5
+      },
+      "additionalServices": [
+        "live_program"
+      ],
+      "details": "برنامه به صورت لایو پخش میشود. ",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "submittedAt": "2025-07-31T16:09:12.859Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-01T06:11:28.600Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "افریقای امروز",
+      "dateTime": {
+        "reservationDate": "2025-08-06",
+        "startTime": "12:00",
+        "endTime": "14:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2
+      },
+      "additionalServices": [
+        "videowall",
+        "xdcam",
+        "crane"
+      ],
+      "details": "",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [
+        "1754722674809",
+        "1753091515954"
+      ],
+      "engineerCount": 2,
+      "cateringServices": [],
+      "id": "1754057176239-mwssjyd",
+      "submittedAt": "2025-08-01T14:06:16.239Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-09T06:59:06.674Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "افریقای امروز",
+      "dateTime": {
+        "reservationDate": "2025-08-13",
+        "startTime": "12:00",
+        "endTime": "14:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2
+      },
+      "additionalServices": [
+        "videowall",
+        "xdcam",
+        "crane"
+      ],
+      "details": "",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [
+        "1753091515954"
+      ],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754057176239-ieae1qb",
+      "submittedAt": "2025-08-01T14:06:16.239Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-29T15:15:37.946Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "افریقای امروز",
+      "dateTime": {
+        "reservationDate": "2025-08-20",
+        "startTime": "12:00",
+        "endTime": "14:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2
+      },
+      "additionalServices": [
+        "videowall",
+        "xdcam",
+        "crane"
+      ],
+      "details": "",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [
+        "1753091515954"
+      ],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754057176239-9hpx6h1",
+      "submittedAt": "2025-08-01T14:06:16.239Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-20T08:07:06.086Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "افریقای امروز",
+      "dateTime": {
+        "reservationDate": "2025-08-27",
+        "startTime": "12:00",
+        "endTime": "14:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2
+      },
+      "additionalServices": [
+        "videowall",
+        "xdcam",
+        "crane"
+      ],
+      "details": "",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [
+        "1753091515954"
+      ],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754057176239-4hu9xw8",
+      "submittedAt": "2025-08-01T14:06:16.239Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-29T11:48:47.517Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "افریقای امروز",
+      "dateTime": {
+        "reservationDate": "2025-09-03",
+        "startTime": "12:00",
+        "endTime": "14:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2
+      },
+      "additionalServices": [
+        "videowall",
+        "xdcam",
+        "crane"
+      ],
+      "details": "",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754057176239-ed660cf",
+      "submittedAt": "2025-08-01T14:06:16.239Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-01T14:07:36.070Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "افریقای امروز",
+      "dateTime": {
+        "reservationDate": "2025-09-10",
+        "startTime": "12:00",
+        "endTime": "14:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2
+      },
+      "additionalServices": [
+        "videowall",
+        "xdcam",
+        "crane"
+      ],
+      "details": "",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754057176239-vqpzgui",
+      "submittedAt": "2025-08-01T14:06:16.239Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-01T14:07:36.875Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "افریقای امروز",
+      "dateTime": {
+        "reservationDate": "2025-09-17",
+        "startTime": "12:00",
+        "endTime": "14:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2
+      },
+      "additionalServices": [
+        "videowall",
+        "xdcam",
+        "crane"
+      ],
+      "details": "",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754057176239-dz5m20r",
+      "submittedAt": "2025-08-01T14:06:16.239Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-01T14:07:37.590Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "افریقای امروز",
+      "dateTime": {
+        "reservationDate": "2025-09-24",
+        "startTime": "12:00",
+        "endTime": "14:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2
+      },
+      "additionalServices": [
+        "videowall",
+        "xdcam",
+        "crane"
+      ],
+      "details": "",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754057176239-y73708a",
+      "submittedAt": "2025-08-01T14:06:16.239Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-01T14:07:38.280Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "افریقای امروز",
+      "dateTime": {
+        "reservationDate": "2025-10-01",
+        "startTime": "12:00",
+        "endTime": "14:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2
+      },
+      "additionalServices": [
+        "videowall",
+        "xdcam",
+        "crane"
+      ],
+      "details": "",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754057176239-2ml2cym",
+      "submittedAt": "2025-08-01T14:06:16.239Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-01T14:07:38.832Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "افریقای امروز",
+      "dateTime": {
+        "reservationDate": "2025-10-08",
+        "startTime": "12:00",
+        "endTime": "14:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2
+      },
+      "additionalServices": [
+        "videowall",
+        "xdcam",
+        "crane"
+      ],
+      "details": "",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754057176239-6aro8g2",
+      "submittedAt": "2025-08-01T14:06:16.239Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-01T14:07:39.292Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "افریقای امروز",
+      "dateTime": {
+        "reservationDate": "2025-10-15",
+        "startTime": "12:00",
+        "endTime": "14:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2
+      },
+      "additionalServices": [
+        "videowall",
+        "xdcam",
+        "crane"
+      ],
+      "details": "",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754057176239-0g7nqvk",
+      "submittedAt": "2025-08-01T14:06:16.239Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-01T14:07:39.853Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "افریقای امروز",
+      "dateTime": {
+        "reservationDate": "2025-10-22",
+        "startTime": "12:00",
+        "endTime": "14:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2
+      },
+      "additionalServices": [
+        "videowall",
+        "xdcam",
+        "crane"
+      ],
+      "details": "",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754057176239-ir5q8df",
+      "submittedAt": "2025-08-01T14:06:16.239Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-01T14:07:41.356Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "آیدا بلوکات",
+      "programName": "برچا",
+      "dateTime": {
+        "reservationDate": "2025-08-06",
+        "startTime": "08:00",
+        "endTime": "11:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 3
+      },
+      "additionalServices": [],
+      "details": "",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [
+        "1753091515954"
+      ],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754142032880-zia5eak",
+      "submittedAt": "2025-08-02T13:40:32.880Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-11T09:01:41.960Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "آیدا بلوکات",
+      "programName": "برچا",
+      "dateTime": {
+        "reservationDate": "2025-08-13",
+        "startTime": "08:00",
+        "endTime": "11:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 3
+      },
+      "additionalServices": [],
+      "details": "",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [
+        "1753091515954"
+      ],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754142032880-oo08sj1",
+      "submittedAt": "2025-08-02T13:40:32.880Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-29T15:15:37.774Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "آیدا بلوکات",
+      "programName": "برچا",
+      "dateTime": {
+        "reservationDate": "2025-08-20",
+        "startTime": "08:00",
+        "endTime": "11:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 3
+      },
+      "additionalServices": [],
+      "details": "",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [
+        "1753091515954"
+      ],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754142032880-s0j84af",
+      "submittedAt": "2025-08-02T13:40:32.880Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-20T08:07:12.231Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "آیدا بلوکات",
+      "programName": "برچا",
+      "dateTime": {
+        "reservationDate": "2025-08-27",
+        "startTime": "08:00",
+        "endTime": "11:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 3
+      },
+      "additionalServices": [],
+      "details": "",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [
+        "1753091515954"
+      ],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754142032880-y9oittx",
+      "submittedAt": "2025-08-02T13:40:32.880Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-29T11:48:41.897Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "آیدا بلوکات",
+      "programName": "برچا",
+      "dateTime": {
+        "reservationDate": "2025-09-03",
+        "startTime": "08:00",
+        "endTime": "11:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 3
+      },
+      "additionalServices": [],
+      "details": "",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754142032880-lt2ew3z",
+      "submittedAt": "2025-08-02T13:40:32.880Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-02T13:44:31.551Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "آیدا بلوکات",
+      "programName": "برچا",
+      "dateTime": {
+        "reservationDate": "2025-09-10",
+        "startTime": "08:00",
+        "endTime": "11:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 3
+      },
+      "additionalServices": [],
+      "details": "",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754142032880-s27qlhe",
+      "submittedAt": "2025-08-02T13:40:32.880Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-02T13:44:32.066Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "آیدا بلوکات",
+      "programName": "برچا",
+      "dateTime": {
+        "reservationDate": "2025-09-17",
+        "startTime": "08:00",
+        "endTime": "11:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 3
+      },
+      "additionalServices": [],
+      "details": "",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754142032880-jw984we",
+      "submittedAt": "2025-08-02T13:40:32.880Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-02T13:44:32.600Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "آیدا بلوکات",
+      "programName": "برچا",
+      "dateTime": {
+        "reservationDate": "2025-09-24",
+        "startTime": "08:00",
+        "endTime": "11:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 3
+      },
+      "additionalServices": [],
+      "details": "",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754142032880-ad7xy6x",
+      "submittedAt": "2025-08-02T13:40:32.880Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-02T13:44:33.050Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "آیدا بلوکات",
+      "programName": "برچا",
+      "dateTime": {
+        "reservationDate": "2025-10-01",
+        "startTime": "08:00",
+        "endTime": "11:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 3
+      },
+      "additionalServices": [],
+      "details": "",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754142032880-12xuo82",
+      "submittedAt": "2025-08-02T13:40:32.880Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-02T13:44:33.546Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "آیدا بلوکات",
+      "programName": "برچا",
+      "dateTime": {
+        "reservationDate": "2025-10-08",
+        "startTime": "08:00",
+        "endTime": "11:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 3
+      },
+      "additionalServices": [],
+      "details": "",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754142032880-91aqwqf",
+      "submittedAt": "2025-08-02T13:40:32.880Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-02T13:44:34.269Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "آیدا بلوکات",
+      "programName": "برچا",
+      "dateTime": {
+        "reservationDate": "2025-10-15",
+        "startTime": "08:00",
+        "endTime": "11:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 3
+      },
+      "additionalServices": [],
+      "details": "",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754142032880-zpc9riy",
+      "submittedAt": "2025-08-02T13:40:32.880Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-02T13:44:35.217Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "آیدا بلوکات",
+      "programName": "برچا",
+      "dateTime": {
+        "reservationDate": "2025-10-22",
+        "startTime": "08:00",
+        "endTime": "11:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 3
+      },
+      "additionalServices": [],
+      "details": "",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754142032880-t456shy",
+      "submittedAt": "2025-08-02T13:40:32.880Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-02T13:44:36.325Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "کاوه تقوایی",
+      "programName": "بدون خط",
+      "dateTime": {
+        "reservationDate": "2025-08-05",
+        "startTime": "17:00",
+        "endTime": "19:30"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "without_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2.5
+      },
+      "additionalServices": [
+        "xdcam",
+        "service_staff",
+        "live_communication"
+      ],
+      "details": "این برنامه از طریق اینترنت اسکاپی یا با گوگل باید اجرا شود",
+      "repetition": {
+        "type": "no_repetition"
+      },
+      "engineers": [
+        "1753091480060",
+        "1754722674809"
+      ],
+      "engineerCount": 2,
+      "cateringServices": [],
+      "id": "1754241852938-z93zg9d",
+      "submittedAt": "2025-08-03T17:24:12.938Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-11T09:05:07.715Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-08-06",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "xdcam",
+        "live_communication",
+        "live_program"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [
+        "1753091480060"
+      ],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295206539-49shmvl",
+      "submittedAt": "2025-08-04T08:13:26.539Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-11T09:01:46.844Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-08-13",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "xdcam",
+        "live_communication",
+        "live_program"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [
+        "1753091515954"
+      ],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295206539-wn1dlhg",
+      "submittedAt": "2025-08-04T08:13:26.539Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-29T15:12:56.258Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-08-20",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "xdcam",
+        "live_communication",
+        "live_program"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [
+        "1753091515954"
+      ],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295206539-u0srgmm",
+      "submittedAt": "2025-08-04T08:13:26.539Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-18T19:11:59.136Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-08-27",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "xdcam",
+        "live_communication",
+        "live_program"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [
+        "1753091515954"
+      ],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295206539-ze9765e",
+      "submittedAt": "2025-08-04T08:13:26.539Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-29T11:48:32.467Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-09-03",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "xdcam",
+        "live_communication",
+        "live_program"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295206539-nlrcfaj",
+      "submittedAt": "2025-08-04T08:13:26.539Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-04T08:15:41.423Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-09-10",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "xdcam",
+        "live_communication",
+        "live_program"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295206539-n45crox",
+      "submittedAt": "2025-08-04T08:13:26.539Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-04T08:15:41.937Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-09-17",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "xdcam",
+        "live_communication",
+        "live_program"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295206539-0cmrv7e",
+      "submittedAt": "2025-08-04T08:13:26.539Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-04T08:15:42.394Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-09-24",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "xdcam",
+        "live_communication",
+        "live_program"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295206539-ie8jn1d",
+      "submittedAt": "2025-08-04T08:13:26.539Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-04T08:15:42.791Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-10-01",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "xdcam",
+        "live_communication",
+        "live_program"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295206539-acxwhvn",
+      "submittedAt": "2025-08-04T08:13:26.539Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-04T08:15:43.268Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-10-08",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "xdcam",
+        "live_communication",
+        "live_program"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295206539-1ym96gz",
+      "submittedAt": "2025-08-04T08:13:26.539Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-04T08:15:43.612Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-10-15",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "xdcam",
+        "live_communication",
+        "live_program"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295206539-ddd2fyh",
+      "submittedAt": "2025-08-04T08:13:26.539Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-04T08:15:43.882Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-10-22",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "xdcam",
+        "live_communication",
+        "live_program"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295206539-dwr67dp",
+      "submittedAt": "2025-08-04T08:13:26.539Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-04T08:15:45.320Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-08-09",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "xdcam",
+        "live_communication",
+        "live_program"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [
+        "1753091515954"
+      ],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295255762-vlk8dny",
+      "submittedAt": "2025-08-04T08:14:15.762Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-11T09:03:49.853Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-08-16",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "xdcam",
+        "live_communication",
+        "live_program"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [
+        "1753091509592"
+      ],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295255762-gipahiq",
+      "submittedAt": "2025-08-04T08:14:15.762Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-29T15:10:18.894Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-08-23",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "xdcam",
+        "live_communication",
+        "live_program"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [
+        "1753091515954"
+      ],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295255762-uetv7qa",
+      "submittedAt": "2025-08-04T08:14:15.762Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-29T15:12:41.114Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-08-30",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "xdcam",
+        "live_communication",
+        "live_program"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [
+        "1753091509592"
+      ],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295255762-r4ufdvg",
+      "submittedAt": "2025-08-04T08:14:15.762Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-29T15:11:43.306Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-09-06",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "xdcam",
+        "live_communication",
+        "live_program"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295255762-uaunw36",
+      "submittedAt": "2025-08-04T08:14:15.762Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-04T08:15:36.554Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-09-13",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "xdcam",
+        "live_communication",
+        "live_program"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295255762-8kx2se2",
+      "submittedAt": "2025-08-04T08:14:15.762Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-04T08:15:36.930Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-09-20",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "xdcam",
+        "live_communication",
+        "live_program"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295255762-efid3c6",
+      "submittedAt": "2025-08-04T08:14:15.762Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-04T08:15:37.332Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-09-27",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "xdcam",
+        "live_communication",
+        "live_program"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295255762-z835ixv",
+      "submittedAt": "2025-08-04T08:14:15.762Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-04T08:15:37.690Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-10-04",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "xdcam",
+        "live_communication",
+        "live_program"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295255762-a5mo0mp",
+      "submittedAt": "2025-08-04T08:14:15.762Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-04T08:15:38.015Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-10-11",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "xdcam",
+        "live_communication",
+        "live_program"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295255762-rowuwp9",
+      "submittedAt": "2025-08-04T08:14:15.762Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-04T08:15:38.412Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-10-18",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "xdcam",
+        "live_communication",
+        "live_program"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295255762-cr8en49",
+      "submittedAt": "2025-08-04T08:14:15.762Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-04T08:15:38.683Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-10-25",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "xdcam",
+        "live_communication",
+        "live_program"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295255762-rgtvo8y",
+      "submittedAt": "2025-08-04T08:14:15.762Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-04T08:15:39.106Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-08-11",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "live_communication",
+        "stream",
+        "xdcam"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [
+        "1753790677405"
+      ],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295313509-739w9yg",
+      "submittedAt": "2025-08-04T08:15:13.509Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-11T09:03:41.608Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-08-18",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "live_communication",
+        "stream",
+        "xdcam"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [
+        "1753091515954"
+      ],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295313509-u34kgs2",
+      "submittedAt": "2025-08-04T08:15:13.509Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-29T15:12:51.652Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-08-25",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "live_communication",
+        "stream",
+        "xdcam"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [
+        "1753790677405"
+      ],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295313509-k3ut5v7",
+      "submittedAt": "2025-08-04T08:15:13.509Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-29T15:12:28.797Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-09-01",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "live_communication",
+        "stream",
+        "xdcam"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295313509-8myltjx",
+      "submittedAt": "2025-08-04T08:15:13.509Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-04T08:15:31.691Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-09-08",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "live_communication",
+        "stream",
+        "xdcam"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295313509-erbx8ec",
+      "submittedAt": "2025-08-04T08:15:13.509Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-04T08:15:32.057Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-09-15",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "live_communication",
+        "stream",
+        "xdcam"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295313509-3zp1aur",
+      "submittedAt": "2025-08-04T08:15:13.509Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-04T08:15:32.441Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-09-22",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "live_communication",
+        "stream",
+        "xdcam"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295313509-9p70grn",
+      "submittedAt": "2025-08-04T08:15:13.509Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-04T08:15:32.797Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-09-29",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "live_communication",
+        "stream",
+        "xdcam"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295313509-2xibonx",
+      "submittedAt": "2025-08-04T08:15:13.509Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-04T08:15:33.104Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-10-06",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "live_communication",
+        "stream",
+        "xdcam"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295313509-5xtiubk",
+      "submittedAt": "2025-08-04T08:15:13.509Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-04T08:15:33.514Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-10-13",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "live_communication",
+        "stream",
+        "xdcam"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295313509-7wzikt8",
+      "submittedAt": "2025-08-04T08:15:13.509Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-04T08:15:33.802Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-10-20",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "live_communication",
+        "stream",
+        "xdcam"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295313509-6lklww8",
+      "submittedAt": "2025-08-04T08:15:13.509Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-04T08:15:34.192Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "The Debate فرانسه",
+      "dateTime": {
+        "reservationDate": "2025-10-27",
+        "startTime": "14:00",
+        "endTime": "15:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "live_communication",
+        "stream",
+        "xdcam"
+      ],
+      "details": "گوگل میت",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754295313509-vrx9hz8",
+      "submittedAt": "2025-08-04T08:15:13.509Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-04T08:15:34.434Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "khoshnevis",
+      "programName": "ایران تودی",
+      "dateTime": {
+        "reservationDate": "2025-08-05",
+        "startTime": "13:30",
+        "endTime": "14:30"
+      },
+      "studio": "studio6",
+      "studioServices": {
+        "serviceType": "without_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [
+        "videowall"
+      ],
+      "details": "مصاحبه",
+      "repetition": {
+        "type": "no_repetition"
+      },
+      "engineers": [
+        "1754722674809"
+      ],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754318012580-9slxbru",
+      "submittedAt": "2025-08-04T14:33:32.580Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-09T06:58:00.266Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "کاوه تقوایی",
+      "programName": "بدون خط",
+      "dateTime": {
+        "reservationDate": "2025-08-09",
+        "startTime": "15:00",
+        "endTime": "17:30"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "without_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2.5
+      },
+      "additionalServices": [
+        "videowall",
+        "xdcam",
+        "makeup_artist",
+        "service_staff",
+        "live_communication"
+      ],
+      "details": "ارتباط اینترنتی گوگل میت یا زوم",
+      "repetition": {
+        "type": "no_repetition"
+      },
+      "engineers": [
+        "1753091480060"
+      ],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754654677410-f5qyp5w",
+      "submittedAt": "2025-08-08T12:04:37.410Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-11T09:00:20.235Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "کاوه تقوایی",
+      "programName": "شکاف اقتصادی",
+      "dateTime": {
+        "reservationDate": "2025-08-11",
+        "startTime": "15:00",
+        "endTime": "17:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "without_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2
+      },
+      "additionalServices": [
+        "videowall",
+        "xdcam",
+        "makeup_artist",
+        "service_staff"
+      ],
+      "details": ".",
+      "repetition": {
+        "type": "no_repetition"
+      },
+      "engineers": [
+        "1754902835226",
+        "1754722674809"
+      ],
+      "engineerCount": 2,
+      "cateringServices": [],
+      "id": "1754671726266-h825faa",
+      "submittedAt": "2025-08-08T16:48:46.266Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-11T09:02:53.834Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "کاوه تقوایی",
+      "programName": "بدون خط",
+      "dateTime": {
+        "reservationDate": "2025-08-10",
+        "startTime": "18:00",
+        "endTime": "20:30"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "without_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2.5
+      },
+      "additionalServices": [
+        "videowall",
+        "xdcam",
+        "makeup_artist",
+        "service_staff",
+        "live_communication"
+      ],
+      "details": "در صورتیکه مایل ناصر هنوز آماده برای ارتباط زنده نباشه",
+      "repetition": {
+        "type": "no_repetition"
+      },
+      "engineers": [
+        "1754902835226"
+      ],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754672357171-hp7rbjn",
+      "submittedAt": "2025-08-08T16:59:17.171Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-11T09:00:44.147Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "اسدی",
+      "programName": "ساخت تیزر آی فیلم",
+      "dateTime": {
+        "reservationDate": "2025-08-11",
+        "startTime": "14:00",
+        "endTime": "18:00"
+      },
+      "studio": "studio5",
+      "studioServices": {
+        "serviceType": "without_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 4
+      },
+      "additionalServices": [],
+      "details": "ضبط تیزر شبکه آی فیلم ،یک نیروی فنی و یک نیروی نورپرداز لطفاً",
+      "repetition": {
+        "type": "no_repetition"
+      },
+      "engineers": [
+        "1754902835226",
+        "1754722674809"
+      ],
+      "engineerCount": 2,
+      "cateringServices": [],
+      "id": "1754744710794-1q4omk4",
+      "submittedAt": "2025-08-09T13:05:10.794Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-29T15:15:09.025Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "میدانی",
+      "programName": "بطور خلاصه",
+      "dateTime": {
+        "reservationDate": "2025-08-10",
+        "startTime": "21:00",
+        "endTime": "23:00"
+      },
+      "studio": "studio6",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2
+      },
+      "additionalServices": [
+        "videowall"
+      ],
+      "details": "",
+      "repetition": {
+        "type": "no_repetition"
+      },
+      "engineers": [
+        "1753790677405"
+      ],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1754757106205-n7kwcvs",
+      "submittedAt": "2025-08-09T16:31:46.205Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-11T09:00:51.897Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "کاوه تقوایی",
+      "programName": "بدون خط",
+      "dateTime": {
+        "reservationDate": "2025-08-12",
+        "startTime": "20:00",
+        "endTime": "21:30"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "without_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1.5
+      },
+      "additionalServices": [
+        "makeup_artist",
+        "live_communication",
+        "service_staff"
+      ],
+      "details": "ارتباط زنده اینترنتی گوگل میت",
+      "repetition": {
+        "type": "no_repetition"
+      },
+      "engineers": [
+        "1753091480060",
+        "1754722674809"
+      ],
+      "engineerCount": 2,
+      "cateringServices": [],
+      "id": "1754893269927-8f3ttb5",
+      "submittedAt": "2025-08-11T06:21:09.927Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-29T15:14:56.584Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "خوش نویس",
+      "programName": "ایران تودی",
+      "dateTime": {
+        "reservationDate": "2025-08-17",
+        "startTime": "14:30",
+        "endTime": "17:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "without_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2.5
+      },
+      "additionalServices": [],
+      "details": "",
+      "repetition": {
+        "type": "no_repetition"
+      },
+      "engineers": [
+        "1754902835226",
+        "1754722674809"
+      ],
+      "engineerCount": 2,
+      "cateringServices": [],
+      "id": "1755348924799-4v82rfb",
+      "submittedAt": "2025-08-16T12:55:24.799Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-29T15:10:15.491Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "کاوه تقوایی",
+      "programName": "بدون خط",
+      "dateTime": {
+        "reservationDate": "2025-08-19",
+        "startTime": "15:00",
+        "endTime": "17:30"
+      },
+      "studio": "studio6",
+      "studioServices": {
+        "serviceType": "without_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2.5
+      },
+      "additionalServices": [
+        "videowall",
+        "makeup_artist",
+        "service_staff",
+        "crane",
+        "live_communication"
+      ],
+      "details": "ارتباط انلاین. نیاز به استفاده از گوگل میت یا زوم",
+      "repetition": {
+        "type": "no_repetition"
+      },
+      "engineers": [
+        "1753091480060"
+      ],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1755416946222-bjh3s0x",
+      "submittedAt": "2025-08-17T07:49:06.222Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-18T19:03:03.166Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "جواد عین آبادی",
+      "programName": "Trend",
+      "dateTime": {
+        "reservationDate": "2025-08-26",
+        "startTime": "10:00",
+        "endTime": "13:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "without_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 3
+      },
+      "additionalServices": [
+        "makeup_artist"
+      ],
+      "details": "",
+      "repetition": {
+        "type": "no_repetition"
+      },
+      "engineers": [
+        "1756468171276"
+      ],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1755421362021-df2l5nv",
+      "submittedAt": "2025-08-17T09:02:42.021Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-29T11:49:36.051Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "احسان فتاحی",
+      "programName": "Quick Take",
+      "dateTime": {
+        "reservationDate": "2025-08-18",
+        "startTime": "11:00",
+        "endTime": "12:30"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "without_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1.5
+      },
+      "additionalServices": [],
+      "details": "نیاز به راه اندازی اتوکیو",
+      "repetition": {
+        "type": "no_repetition"
+      },
+      "engineers": [
+        "1753091480060"
+      ],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1755430639079-olq80sp",
+      "submittedAt": "2025-08-17T11:37:19.079Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-18T18:49:29.273Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "خوش نویس",
+      "programName": "True Promise",
+      "dateTime": {
+        "reservationDate": "2025-08-19",
+        "startTime": "11:00",
+        "endTime": "14:00"
+      },
+      "studio": "studio6",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 3
+      },
+      "additionalServices": [
+        "videowall",
+        "crane"
+      ],
+      "details": "",
+      "repetition": {
+        "type": "no_repetition"
+      },
+      "engineers": [
+        "1753790632769",
+        "1753091509592"
+      ],
+      "engineerCount": 2,
+      "cateringServices": [],
+      "id": "1755434025151-oia84ud",
+      "submittedAt": "2025-08-17T12:33:45.151Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-18T19:07:35.974Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "خوش نویس",
+      "programName": "ایران تودی",
+      "dateTime": {
+        "reservationDate": "2025-08-18",
+        "startTime": "14:00",
+        "endTime": "16:00"
+      },
+      "studio": "studio6",
+      "studioServices": {
+        "serviceType": "without_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2
+      },
+      "additionalServices": [],
+      "details": "",
+      "repetition": {
+        "type": "no_repetition"
+      },
+      "engineers": [
+        "1754722674809"
+      ],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1755434260072-nf0uefx",
+      "submittedAt": "2025-08-17T12:37:40.072Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-18T19:02:52.547Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "کاوه تقوایی",
+      "programName": "شکاف اقتصادی",
+      "dateTime": {
+        "reservationDate": "2025-08-25",
+        "startTime": "15:00",
+        "endTime": "17:00"
+      },
+      "studio": "studio6",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2
+      },
+      "additionalServices": [
+        "videowall",
+        "xdcam",
+        "crane",
+        "makeup_artist",
+        "service_staff"
+      ],
+      "details": "در استودیو مایا ناصر",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [
+        "1753790677405"
+      ],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1755496743474-ndsrf1f",
+      "submittedAt": "2025-08-18T05:59:03.474Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-29T15:12:22.894Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "کاوه تقوایی",
+      "programName": "شکاف اقتصادی",
+      "dateTime": {
+        "reservationDate": "2025-09-01",
+        "startTime": "15:00",
+        "endTime": "17:00"
+      },
+      "studio": "studio6",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2
+      },
+      "additionalServices": [
+        "videowall",
+        "xdcam",
+        "crane",
+        "makeup_artist",
+        "service_staff"
+      ],
+      "details": "در استودیو مایا ناصر",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1755496743474-wwbp565",
+      "submittedAt": "2025-08-18T05:59:03.474Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-18T16:42:26.865Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "کاوه تقوایی",
+      "programName": "شکاف اقتصادی",
+      "dateTime": {
+        "reservationDate": "2025-09-08",
+        "startTime": "15:00",
+        "endTime": "17:00"
+      },
+      "studio": "studio6",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2
+      },
+      "additionalServices": [
+        "videowall",
+        "xdcam",
+        "crane",
+        "makeup_artist",
+        "service_staff"
+      ],
+      "details": "در استودیو مایا ناصر",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1755496743474-d8v6v2a",
+      "submittedAt": "2025-08-18T05:59:03.474Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-18T16:43:23.751Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "کاوه تقوایی",
+      "programName": "شکاف اقتصادی",
+      "dateTime": {
+        "reservationDate": "2025-09-15",
+        "startTime": "15:00",
+        "endTime": "17:00"
+      },
+      "studio": "studio6",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2
+      },
+      "additionalServices": [
+        "videowall",
+        "xdcam",
+        "crane",
+        "makeup_artist",
+        "service_staff"
+      ],
+      "details": "در استودیو مایا ناصر",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1755496743474-0jxg9sc",
+      "submittedAt": "2025-08-18T05:59:03.474Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-18T16:43:38.391Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "کاوه تقوایی",
+      "programName": "شکاف اقتصادی",
+      "dateTime": {
+        "reservationDate": "2025-09-22",
+        "startTime": "15:00",
+        "endTime": "17:00"
+      },
+      "studio": "studio6",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2
+      },
+      "additionalServices": [
+        "videowall",
+        "xdcam",
+        "crane",
+        "makeup_artist",
+        "service_staff"
+      ],
+      "details": "در استودیو مایا ناصر",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1755496743474-95fbybz",
+      "submittedAt": "2025-08-18T05:59:03.474Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-18T16:43:53.306Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "کاوه تقوایی",
+      "programName": "شکاف اقتصادی",
+      "dateTime": {
+        "reservationDate": "2025-09-29",
+        "startTime": "15:00",
+        "endTime": "17:00"
+      },
+      "studio": "studio6",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2
+      },
+      "additionalServices": [
+        "videowall",
+        "xdcam",
+        "crane",
+        "makeup_artist",
+        "service_staff"
+      ],
+      "details": "در استودیو مایا ناصر",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1755496743474-t4cvxbe",
+      "submittedAt": "2025-08-18T05:59:03.474Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-18T16:44:13.436Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "کاوه تقوایی",
+      "programName": "شکاف اقتصادی",
+      "dateTime": {
+        "reservationDate": "2025-10-06",
+        "startTime": "15:00",
+        "endTime": "17:00"
+      },
+      "studio": "studio6",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2
+      },
+      "additionalServices": [
+        "videowall",
+        "xdcam",
+        "crane",
+        "makeup_artist",
+        "service_staff"
+      ],
+      "details": "در استودیو مایا ناصر",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1755496743474-ofgvrte",
+      "submittedAt": "2025-08-18T05:59:03.474Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-18T16:44:29.929Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "کاوه تقوایی",
+      "programName": "شکاف اقتصادی",
+      "dateTime": {
+        "reservationDate": "2025-10-13",
+        "startTime": "15:00",
+        "endTime": "17:00"
+      },
+      "studio": "studio6",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2
+      },
+      "additionalServices": [
+        "videowall",
+        "xdcam",
+        "crane",
+        "makeup_artist",
+        "service_staff"
+      ],
+      "details": "در استودیو مایا ناصر",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1755496743474-k8e4p3u",
+      "submittedAt": "2025-08-18T05:59:03.474Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-18T16:44:45.522Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "کاوه تقوایی",
+      "programName": "شکاف اقتصادی",
+      "dateTime": {
+        "reservationDate": "2025-10-20",
+        "startTime": "15:00",
+        "endTime": "17:00"
+      },
+      "studio": "studio6",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2
+      },
+      "additionalServices": [
+        "videowall",
+        "xdcam",
+        "crane",
+        "makeup_artist",
+        "service_staff"
+      ],
+      "details": "در استودیو مایا ناصر",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1755496743474-ljhnpb1",
+      "submittedAt": "2025-08-18T05:59:03.474Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-18T16:44:59.662Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "کاوه تقوایی",
+      "programName": "شکاف اقتصادی",
+      "dateTime": {
+        "reservationDate": "2025-10-27",
+        "startTime": "15:00",
+        "endTime": "17:00"
+      },
+      "studio": "studio6",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2
+      },
+      "additionalServices": [
+        "videowall",
+        "xdcam",
+        "crane",
+        "makeup_artist",
+        "service_staff"
+      ],
+      "details": "در استودیو مایا ناصر",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1755496743474-ipbt4z3",
+      "submittedAt": "2025-08-18T05:59:03.474Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-18T16:47:08.265Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "کاوه تقوایی",
+      "programName": "شکاف اقتصادی",
+      "dateTime": {
+        "reservationDate": "2025-11-03",
+        "startTime": "15:00",
+        "endTime": "17:00"
+      },
+      "studio": "studio6",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2
+      },
+      "additionalServices": [
+        "videowall",
+        "xdcam",
+        "crane",
+        "makeup_artist",
+        "service_staff"
+      ],
+      "details": "در استودیو مایا ناصر",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1755496743474-t08vywr",
+      "submittedAt": "2025-08-18T05:59:03.474Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-18T16:46:51.851Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "کاوه تقوایی",
+      "programName": "شکاف اقتصادی",
+      "dateTime": {
+        "reservationDate": "2025-11-10",
+        "startTime": "15:00",
+        "endTime": "17:00"
+      },
+      "studio": "studio6",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2
+      },
+      "additionalServices": [
+        "videowall",
+        "xdcam",
+        "crane",
+        "makeup_artist",
+        "service_staff"
+      ],
+      "details": "در استودیو مایا ناصر",
+      "repetition": {
+        "type": "weekly_3months"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1755496743474-zjyaaau",
+      "submittedAt": "2025-08-18T05:59:03.474Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-18T16:45:34.563Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "مهمان",
+      "programName": "شکاف اقتصادی",
+      "dateTime": {
+        "reservationDate": "2025-08-18",
+        "startTime": "15:00",
+        "endTime": "17:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2
+      },
+      "additionalServices": [
+        "xdcam"
+      ],
+      "details": "",
+      "repetition": {
+        "type": "no_repetition"
+      },
+      "engineers": [
+        "1754902835226"
+      ],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1755505328028-moqek32",
+      "submittedAt": "2025-08-18T08:22:08.028Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-18T19:00:35.814Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "میدانی",
+      "programName": "بطور خلاصه ",
+      "dateTime": {
+        "reservationDate": "2025-08-21",
+        "startTime": "08:00",
+        "endTime": "11:00"
+      },
+      "studio": "studio6",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 3
+      },
+      "additionalServices": [
+        "videowall"
+      ],
+      "details": "نورپرداز نیاز هست",
+      "repetition": {
+        "type": "no_repetition"
+      },
+      "engineers": [
+        "1753790677405",
+        "1754722674809"
+      ],
+      "engineerCount": 2,
+      "cateringServices": [],
+      "id": "1755665811436-2t7mlbd",
+      "submittedAt": "2025-08-20T04:56:51.436Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-20T08:28:56.633Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "کاوه تقوایی",
+      "programName": "بدون خط",
+      "dateTime": {
+        "reservationDate": "2025-08-26",
+        "startTime": "17:00",
+        "endTime": "20:30"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "without_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 3.5
+      },
+      "additionalServices": [
+        "videowall",
+        "makeup_artist",
+        "service_staff",
+        "live_communication"
+      ],
+      "details": "استودیو با عوامل پخش با 1 فنی",
+      "repetition": {
+        "type": "no_repetition"
+      },
+      "engineers": [
+        "1756468047986",
+        "1754722674809"
+      ],
+      "engineerCount": 2,
+      "cateringServices": [],
+      "id": "1755770322875-68k6zd8",
+      "submittedAt": "2025-08-21T09:58:42.875Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-29T11:49:15.542Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "احسان فتاحی",
+      "programName": "Quick Take",
+      "dateTime": {
+        "reservationDate": "2025-08-25",
+        "startTime": "00:00",
+        "endTime": "13:30"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "without_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 13.5
+      },
+      "additionalServices": [],
+      "details": "نیاز به اتوکیو ",
+      "repetition": {
+        "type": "no_repetition"
+      },
+      "engineers": [
+        "1753790677405"
+      ],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1755943325735-5xm3280",
+      "submittedAt": "2025-08-23T10:02:05.735Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-29T15:12:12.968Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "اسد",
+      "programName": "ويژه برنامه هفته وحدت",
+      "dateTime": {
+        "reservationDate": "2025-08-26",
+        "startTime": "10:00",
+        "endTime": "23:00"
+      },
+      "studio": "studio6",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 13
+      },
+      "additionalServices": [
+        "videowall",
+        "xdcam",
+        "crane",
+        "makeup_artist",
+        "service_staff",
+        "live_program"
+      ],
+      "details": "ويژه برنامه به مدت ٥ روز",
+      "repetition": {
+        "type": "no_repetition"
+      },
+      "engineers": [
+        "1753790632769",
+        "1753790677405",
+        "1754722674809",
+        "1753790677405"
+      ],
+      "engineerCount": 4,
+      "cateringServices": [],
+      "id": "1756047718017-mqjc0cu",
+      "submittedAt": "2025-08-24T15:01:58.017Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-29T11:49:02.498Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "اسد",
+      "programName": "ويژه برنامه هفته وحدت",
+      "dateTime": {
+        "reservationDate": "2025-08-27",
+        "startTime": "07:00",
+        "endTime": "23:00"
+      },
+      "studio": "studio6",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 16
+      },
+      "additionalServices": [
+        "videowall",
+        "xdcam",
+        "crane",
+        "makeup_artist",
+        "service_staff",
+        "live_program"
+      ],
+      "details": "",
+      "repetition": {
+        "type": "no_repetition"
+      },
+      "engineers": [
+        "1754902835226",
+        "1753790677405",
+        "1754722674809",
+        "1753790677405"
+      ],
+      "engineerCount": 4,
+      "cateringServices": [],
+      "id": "1756047801486-floy0s5",
+      "submittedAt": "2025-08-24T15:03:21.486Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-29T11:48:07.920Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "اسد",
+      "programName": "ويژه برنامه هفته وحدت",
+      "dateTime": {
+        "reservationDate": "2025-08-28",
+        "startTime": "07:00",
+        "endTime": "23:00"
+      },
+      "studio": "studio6",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 16
+      },
+      "additionalServices": [
+        "videowall",
+        "xdcam",
+        "crane",
+        "makeup_artist",
+        "service_staff",
+        "live_program"
+      ],
+      "details": "",
+      "repetition": {
+        "type": "no_repetition"
+      },
+      "engineers": [
+        "1753091515954",
+        "1753091515954",
+        "1756468047986",
+        "1753790677405"
+      ],
+      "engineerCount": 4,
+      "cateringServices": [],
+      "id": "1756047862138-gio4lax",
+      "submittedAt": "2025-08-24T15:04:22.138Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-29T11:47:49.631Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "اسد",
+      "programName": "ويژه برنامه هفته وحدت",
+      "dateTime": {
+        "reservationDate": "2025-08-29",
+        "startTime": "07:00",
+        "endTime": "23:00"
+      },
+      "studio": "studio6",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 16
+      },
+      "additionalServices": [
+        "videowall",
+        "xdcam",
+        "makeup_artist",
+        "crane",
+        "service_staff",
+        "live_program"
+      ],
+      "details": "",
+      "repetition": {
+        "type": "no_repetition"
+      },
+      "engineers": [
+        "1753790632769",
+        "1753790677405",
+        "1753790677405",
+        "1753790632769"
+      ],
+      "engineerCount": 4,
+      "cateringServices": [],
+      "id": "1756047919473-jcg1q8e",
+      "submittedAt": "2025-08-24T15:05:19.473Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-29T11:47:02.303Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "اسد",
+      "programName": "ويژه برنامه هفته وحدت",
+      "dateTime": {
+        "reservationDate": "2025-08-30",
+        "startTime": "07:00",
+        "endTime": "23:00"
+      },
+      "studio": "studio6",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 16
+      },
+      "additionalServices": [
+        "videowall",
+        "xdcam",
+        "crane",
+        "makeup_artist",
+        "service_staff",
+        "live_program"
+      ],
+      "details": "",
+      "repetition": {
+        "type": "no_repetition"
+      },
+      "engineers": [
+        "1753091509592",
+        "1753790677405",
+        "1753790677405",
+        "1754722674809"
+      ],
+      "engineerCount": 4,
+      "cateringServices": [],
+      "id": "1756047974166-0qgh2hi",
+      "submittedAt": "2025-08-24T15:06:14.166Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-29T15:11:35.041Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "کاوه تقوایی",
+      "programName": "بدون خط",
+      "dateTime": {
+        "reservationDate": "2025-08-30",
+        "startTime": "16:30",
+        "endTime": "19:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "without_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2.5
+      },
+      "additionalServices": [
+        "xdcam",
+        "makeup_artist",
+        "service_staff",
+        "live_communication"
+      ],
+      "details": "ارتباط زنده گوگل میت یا زوم",
+      "repetition": {
+        "type": "no_repetition"
+      },
+      "engineers": [
+        "1753091480060",
+        "1754722674809"
+      ],
+      "engineerCount": 2,
+      "cateringServices": [],
+      "id": "1756463267695-7f5z2gb",
+      "submittedAt": "2025-08-29T10:27:47.695Z",
+      "status": "finalized",
+      "updatedAt": "2025-08-30T14:43:42.693Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "خوش نویس",
+      "programName": "ایران تودی",
+      "dateTime": {
+        "reservationDate": "2025-08-31",
+        "startTime": "11:00",
+        "endTime": "12:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "without_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 1
+      },
+      "additionalServices": [],
+      "details": "استودیو",
+      "repetition": {
+        "type": "no_repetition"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1756552291041-rrroplr",
+      "submittedAt": "2025-08-30T11:11:31.041Z",
+      "status": "confirmed",
+      "updatedAt": "2025-08-30T11:16:56.515Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "جواد عین آبادی",
+      "programName": "Trend",
+      "dateTime": {
+        "reservationDate": "2025-09-02",
+        "startTime": "10:00",
+        "endTime": "13:00"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "without_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 3
+      },
+      "additionalServices": [
+        "makeup_artist"
+      ],
+      "details": "",
+      "repetition": {
+        "type": "no_repetition"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1756630993399-t0v9zmt",
+      "submittedAt": "2025-08-31T09:03:13.399Z",
+      "status": "confirmed",
+      "updatedAt": "2025-09-01T05:28:43.751Z"
+    },
+    {
+      "type": "producer",
+      "requesterName": "کاوه تقوایی",
+      "programName": "بدون خط",
+      "dateTime": {
+        "reservationDate": "2025-09-02",
+        "startTime": "14:30",
+        "endTime": "16:30"
+      },
+      "studio": "studio2",
+      "studioServices": {
+        "serviceType": "with_crew",
+        "numberOfDays": 1,
+        "hoursPerDay": 2
+      },
+      "additionalServices": [
+        "xdcam",
+        "makeup_artist",
+        "service_staff",
+        "live_communication"
+      ],
+      "details": "ارتباط زنده. گوگل میت یا زوم",
+      "repetition": {
+        "type": "no_repetition"
+      },
+      "engineers": [],
+      "engineerCount": 1,
+      "cateringServices": [],
+      "id": "1756656683265-ye73phb",
+      "submittedAt": "2025-08-31T16:11:23.265Z",
+      "status": "confirmed",
+      "updatedAt": "2025-09-01T05:28:42.708Z"
+    }
+  ]
+}
