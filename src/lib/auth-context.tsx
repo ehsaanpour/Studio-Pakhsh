@@ -7,7 +7,7 @@ import type { User } from '@/types';
 
 interface AuthContextType {
   user: User | null;
-  login: (username: string, password: string) => Promise<boolean>;
+  login: (username: string, password: string) => Promise<{ success: boolean; user?: User }>;
   logout: () => void;
   isAdmin: boolean;
   isPakhshManager: boolean;
@@ -42,14 +42,14 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       if (result.success && result.user) {
         setUser(result.user);
         Cookies.set('user', JSON.stringify(result.user), { expires: 1 });
-        return true;
+        return { success: true, user: result.user };
       } else {
         console.error('Login failed:', result.error);
-        return false;
+        return { success: false };
       }
     } catch (error) {
       console.error('Login error:', error);
-      return false;
+      return { success: false };
     }
   };
 

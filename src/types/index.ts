@@ -62,6 +62,20 @@ export type AdditionalService =
 
   | 'live_program';
 
+export type BroadcastCrewMember =
+  | 'director' // کارگردان
+  | 'sound_engineer' // صدابردار
+  | 'cameraman' // تصویربردار
+  | 'informatics' // انفورماتیک
+  | 'cg' // CG
+  | 'script_supervisor' // منشی صحنه
+  | 'av_assistant'; // دستیار صدا و تصویر
+
+export interface BroadcastCrewSelection {
+  member: BroadcastCrewMember;
+  quantity: number;
+}
+
 export type CateringService =
   | 'drinks'
   | 'breakfast'
@@ -86,6 +100,7 @@ export interface StudioReservationRequest {
   studio: StudioSelection;
   studioServices: StudioServicesInfo;
   additionalServices?: AdditionalService[];
+  broadcastCrew?: BroadcastCrewSelection[]; // New field for broadcast crew
   cateringServices?: CateringService[]; // Excluded for producer
   details?: string;
   repetition?: Repetition;

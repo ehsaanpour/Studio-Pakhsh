@@ -26,7 +26,7 @@ import { cn } from '@/lib/utils';
 import React, { useState, useEffect } from 'react';
 import { addReservations, updateReservation } from '@/lib/reservation-store';
 import { PersianDatePicker } from '@/components/ui/persian-date-picker';
-import type { AdditionalService, StudioReservationRequest } from '@/types';
+import type { AdditionalService, StudioReservationRequest, BroadcastCrewMember, BroadcastCrewSelection } from '@/types';
 import { getProgramNames } from '@/lib/program-name-store';
 
 const formatDateToYYYYMMDD = (date: Date): string => {
@@ -68,6 +68,10 @@ export const producerFormSchema = z.object({
     'stream',
     'live_program',
   ])).optional(),
+  broadcastCrew: z.array(z.object({
+    member: z.enum(['director', 'sound_engineer', 'cameraman', 'informatics', 'cg', 'script_supervisor', 'av_assistant']),
+    quantity: z.number().min(1, 'تعداد باید حداقل ۱ باشد.')
+  })).optional(),
   details: z.string().optional(),
 }).refine((data) => {
   if (data.additionalServices?.includes('live_communication') || data.additionalServices?.includes('stream')) {
@@ -104,6 +108,16 @@ const additionalServiceItems: { id: AdditionalService; label: string }[] = [
   { id: 'live_communication', label: 'ارتباط زنده' },
   { id: 'stream', label: 'استریم' },
   { id: 'live_program', label: 'برنامه زنده' },
+];
+
+const broadcastCrewMembers: { id: BroadcastCrewMember; label: string }[] = [
+  { id: 'director', label: 'کارگردان' },
+  { id: 'sound_engineer', label: 'صدابردار' },
+  { id: 'cameraman', label: 'تصویربردار' },
+  { id: 'informatics', label: 'انفورماتیک' },
+  { id: 'cg', label: 'CG' },
+  { id: 'script_supervisor', label: 'منشی صحنه' },
+  { id: 'av_assistant', label: 'دستیار صدا و تصویر' },
 ];
 
 interface ProducerReservationFormProps {
@@ -151,6 +165,7 @@ export function ProducerReservationForm({ producerName, existingReservation }: P
       studioServiceType: existingReservation.studioServices.serviceType,
       repetitionType: existingReservation.repetition?.type || 'no_repetition',
       repetitionEndDate: existingReservation.repetition?.endDate,
+      broadcastCrew: existingReservation.broadcastCrew || [],
     } : {
       programName: '',
       reservationDate: new Date(),
@@ -160,6 +175,7 @@ export function ProducerReservationForm({ producerName, existingReservation }: P
       studioServiceType: undefined,
       repetitionType: 'no_repetition',
       additionalServices: [],
+      broadcastCrew: [],
       details: '',
     },
   });
@@ -228,6 +244,7 @@ export function ProducerReservationForm({ producerName, existingReservation }: P
             hoursPerDay: 0, // Server calculates this
           },
           additionalServices: d.additionalServices || [],
+          broadcastCrew: d.broadcastCrew || [],
           details: d.details || '',
           repetition: {
             type: d.repetitionType,
@@ -421,6 +438,92 @@ export function ProducerReservationForm({ producerName, existingReservation }: P
               )}
             />
           </div>
+        </div>
+
+        {/* Broadcast Crew Section */}
+        <div className="space-y-4 p-4 sm:p-6 border rounded-lg shadow-sm bg-card">
+          <h3 className="text-lg sm:text-xl font-semibold text-primary border-b pb-2 mb-4">عوامل پخش</h3>
+          <FormField
+            control={form.control}
+            name="broadcastCrew"
+            render={({ field }) => {
+              const isEnabled = form.watch('studioServiceType') === 'with_crew';
+              return (
+                <FormItem>
+                  <FormLabel className={cn(
+                    "text-base",
+                    !isEnabled && "text-muted-foreground"
+                  )}>
+                    انتخاب عوامل پخش مورد نیاز
+                  </FormLabel>
+                  {!isEnabled && (
+                    <p className="text-sm text-muted-foreground mb-4">
+                      این بخش فقط برای انتخاب "استودیو با عوامل پخش" فعال است.
+                    </p>
+                  )}
+                  <div className={cn(
+                    "grid grid-cols-1 sm:grid-cols-2 gap-4",
+                    !isEnabled && "opacity-50 pointer-events-none"
+                  )}>
+                    {broadcastCrewMembers.map((member) => {
+                      const currentSelection = field.value?.find(item => item.member === member.id);
+                      const isSelected = !!currentSelection;
+                      
+                      return (
+                        <div key={member.id} className="p-4 border rounded-lg space-y-3">
+                          <div className="flex items-center justify-between">
+                            <FormLabel className="font-normal cursor-pointer">
+                              {member.label}
+                            </FormLabel>
+                            <Checkbox
+                              checked={isSelected}
+                              disabled={!isEnabled}
+                              onCheckedChange={(checked) => {
+                                const currentCrew = field.value || [];
+                                if (checked) {
+                                  field.onChange([
+                                    ...currentCrew.filter(item => item.member !== member.id),
+                                    { member: member.id, quantity: 1 }
+                                  ]);
+                                } else {
+                                  field.onChange(currentCrew.filter(item => item.member !== member.id));
+                                }
+                              }}
+                            />
+                          </div>
+                          {isSelected && (
+                            <div className="flex items-center gap-2">
+                              <FormLabel className="text-sm">تعداد:</FormLabel>
+                              <Input
+                                type="number"
+                                min="1"
+                                max="10"
+                                value={currentSelection?.quantity || 1}
+                                disabled={!isEnabled}
+                                className="w-20 text-center"
+                                onChange={(e) => {
+                                  const quantity = parseInt(e.target.value) || 1;
+                                  const currentCrew = field.value || [];
+                                  field.onChange(
+                                    currentCrew.map(item => 
+                                      item.member === member.id 
+                                        ? { ...item, quantity }
+                                        : item
+                                    )
+                                  );
+                                }}
+                              />
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+                  <FormMessage />
+                </FormItem>
+              );
+            }}
+          />
         </div>
 
         <div className="space-y-4 p-4 sm:p-6 border rounded-lg shadow-sm bg-card">

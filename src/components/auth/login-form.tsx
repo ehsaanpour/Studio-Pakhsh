@@ -44,17 +44,18 @@ export function LoginForm() {
   async function onSubmit(data: LoginFormValues) {
     setIsLoading(true);
     try {
-      const success = await login(data.username, data.password);
+      const loginResult = await login(data.username, data.password);
       
-      if (success) {
+      if (loginResult.success && loginResult.user) {
         toast({
           title: 'ورود موفق',
           description: 'شما با موفقیت وارد شدید.',
         });
-        // Redirect based on user role
-        if (isAdmin) {
+        
+        // Redirect based on user role from the login result
+        if (loginResult.user.isAdmin) {
           router.push('/admin');
-        } else if (isPakhshManager) {
+        } else if (loginResult.user.isPakhshManager) {
           router.push('/pakhsh-management');
         } else {
           router.push('/producer');
