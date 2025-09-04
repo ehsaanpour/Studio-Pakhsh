@@ -1,13 +1,14 @@
 [
   {
     "username": "admin",
-    "password": "$2b$10$cknUkMOjTniMYBFP/QdiLOUIYUdqZaSY.aSq5PTrT2iCJlUeMiEji",
-    "isAdmin": true
+    "password": "$2b$10$w37m04PyisYtVCsiwPPrT.UaonPR7btX7w1vEuX961VwCT9iTgMTS",
+    "isAdmin": true,
+    "name": "Administrator"
   },
   {
     "name": "مهندس حکمیان",
     "username": "hakam",
-    "password": "$2b$10$cknUkMOjTniMYBFP/QdiLOUIYUdqZaSY.aSq5PTrT2iCJlUeMiEji",
+    "password": "$2b$10$B0eSj0qrYO.tg8vpwzKDp./oVL.8XACBaun5w9wWhkQL6fuZMzLru",
     "isAdmin": true
   }
 ]
