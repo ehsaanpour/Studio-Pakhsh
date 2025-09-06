@@ -7,7 +7,7 @@ import type { User } from '@/types';
 
 interface AuthContextType {
   user: User | null;
-  login: (username: string, password: string) => Promise<{ success: boolean; user?: User }>;
+  login: (username: string, password: string) => Promise<{ success: boolean; user?: User; error?: string }>;
   logout: () => void;
   isAdmin: boolean;
   isPakhshManager: boolean;
@@ -44,8 +44,9 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         Cookies.set('user', JSON.stringify(result.user), { expires: 1 });
         return { success: true, user: result.user };
       } else {
-        console.error('Login failed:', result.error);
-        return { success: false };
+        // Failed login attempt (wrong credentials) - this is normal, not an error
+        console.log('Authentication failed:', result.error || 'Invalid credentials');
+        return { success: false, error: result.error };
       }
     } catch (error) {
       console.error('Login error:', error);

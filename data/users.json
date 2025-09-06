@@ -1,14 +1,22 @@
 [
   {
     "username": "admin",
-    "password": "$2b$10$nfq/.vkmn6CEOwluT.1vNu1kAYawcdvl60W6zRrnjufY0gBj6e/R2",
+    "password": "$2b$10$8R4fe6DDAzH6FnUateS4zOL/Omokz1fj/BSvbAWN/c4cBoEDYhTCy",
     "isAdmin": true,
-    "name": "Administrator"
+    "name": "Administrator",
+    "email": "admin@studio-pakhsh.com",
+    "phone": null,
+    "workplace": "Studio Pakhsh",
+    "profilePictureUrl": null
   },
   {
-    "name": "مهندس حکمیان",
     "username": "hakam",
-    "password": "$2b$10$pG8bt7dO0UCqezrmp2XUX.RS7q81bkMtWgSlgdpj99L7hUmyXgHVu",
-    "isAdmin": true
+    "password": "$2b$10$lJGH9avfPsgjMEqGEK3m2OnFgngE2Xg0ZUGMUwD/QgNWPGAUTYFC.",
+    "isAdmin": true,
+    "name": "مهندس حکمیان",
+    "email": "hakam@studio-pakhsh.com",
+    "phone": null,
+    "workplace": "Studio Pakhsh",
+    "profilePictureUrl": null
   }
 ]

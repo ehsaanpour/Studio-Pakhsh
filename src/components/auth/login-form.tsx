@@ -61,9 +61,11 @@ export function LoginForm() {
           router.push('/producer');
         }
       } else {
+        // Show the specific error message from the server or a default message
+        const errorMessage = loginResult.error || 'نام کاربری یا رمز عبور اشتباه است.';
         toast({
           title: 'خطا در ورود',
-          description: 'نام کاربری یا رمز عبور اشتباه است.',
+          description: errorMessage,
           variant: 'destructive',
         });
       }

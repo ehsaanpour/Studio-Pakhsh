@@ -19,9 +19,12 @@ export async function POST(request: NextRequest) {
     // Try admin first
     try {
       const isValidAdmin = await verifyAdminPassword(username, password);
+      
       if (isValidAdmin) {
         const adminUser = await getAdminByUsername(username);
+        
         if (adminUser) {
+          console.log('Admin authentication successful for:', username);
           return NextResponse.json({
             success: true,
             user: {
