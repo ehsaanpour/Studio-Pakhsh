@@ -3666,69 +3666,6 @@
       "submittedAt": "2025-08-31T16:11:23.265Z",
       "status": "confirmed",
       "updatedAt": "2025-09-01T05:28:42.708Z"
-    },
-    {
-      "type": "producer",
-      "requesterName": "مهمان",
-      "programName": "ویکی",
-      "dateTime": {
-        "reservationDate": "2025-09-07",
-        "startTime": "21:00",
-        "endTime": "21:30"
-      },
-      "studio": "studio2",
-      "studioServices": {
-        "serviceType": "with_crew",
-        "numberOfDays": 1,
-        "hoursPerDay": 0.5
-      },
-      "additionalServices": [
-        "videowall",
-        "live_program"
-      ],
-      "broadcastCrew": [
-        {
-          "member": "director",
-          "quantity": 1
-        },
-        {
-          "member": "sound_engineer",
-          "quantity": 1
-        },
-        {
-          "member": "cameraman",
-          "quantity": 3
-        },
-        {
-          "member": "informatics",
-          "quantity": 1
-        },
-        {
-          "member": "cg",
-          "quantity": 1
-        },
-        {
-          "member": "script_supervisor",
-          "quantity": 1
-        },
-        {
-          "member": "av_assistant",
-          "quantity": 1
-        }
-      ],
-      "details": "",
-      "repetition": {
-        "type": "no_repetition"
-      },
-      "engineers": [],
-      "engineerCount": 1,
-      "cateringServices": [],
-      "id": "1757169181804-e0uxfel",
-      "submittedAt": "2025-09-06T14:33:01.804Z",
-      "status": "confirmed",
-      "updatedAt": "2025-09-06T14:55:01.436Z",
-      "adminConfirmedAt": "2025-09-06T14:54:10.934Z",
-      "pakhshConfirmedAt": "2025-09-06T14:55:01.436Z"
     }
   ]
 }
