@@ -67,9 +67,10 @@ export const producerFormSchema = z.object({
     'live_communication',
     'stream',
     'live_program',
+    'simultaneous_translator',
   ])).optional(),
   broadcastCrew: z.array(z.object({
-    member: z.enum(['director', 'sound_engineer', 'cameraman', 'informatics', 'cg', 'script_supervisor', 'av_assistant']),
+    member: z.enum(['director', 'sound_engineer', 'cameraman', 'informatics', 'cg', 'script_supervisor', 'av_assistant', 'lighting_operator']),
     quantity: z.number().min(1, 'تعداد باید حداقل ۱ باشد.')
   })).optional(),
   details: z.string().optional(),
@@ -108,6 +109,7 @@ const additionalServiceItems: { id: AdditionalService; label: string }[] = [
   { id: 'live_communication', label: 'ارتباط زنده' },
   { id: 'stream', label: 'استریم' },
   { id: 'live_program', label: 'برنامه زنده' },
+  { id: 'simultaneous_translator', label: 'مترجم همزمان' },
 ];
 
 const broadcastCrewMembers: { id: BroadcastCrewMember; label: string }[] = [
@@ -118,6 +120,7 @@ const broadcastCrewMembers: { id: BroadcastCrewMember; label: string }[] = [
   { id: 'cg', label: 'CG' },
   { id: 'script_supervisor', label: 'منشی صحنه' },
   { id: 'av_assistant', label: 'دستیار صدا و تصویر' },
+  { id: 'lighting_operator', label: 'نورپرداز' },
 ];
 
 interface ProducerReservationFormProps {

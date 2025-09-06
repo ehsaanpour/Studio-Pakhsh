@@ -60,7 +60,9 @@ export type AdditionalService =
 
   | 'stream' // استریم
 
-  | 'live_program';
+  | 'live_program'
+
+  | 'simultaneous_translator'; // مترجم همزمان
 
 export type BroadcastCrewMember =
   | 'director' // کارگردان
@@ -69,7 +71,8 @@ export type BroadcastCrewMember =
   | 'informatics' // انفورماتیک
   | 'cg' // CG
   | 'script_supervisor' // منشی صحنه
-  | 'av_assistant'; // دستیار صدا و تصویر
+  | 'av_assistant' // دستیار صدا و تصویر
+  | 'lighting_operator'; // نورپرداز
 
 export interface BroadcastCrewSelection {
   member: BroadcastCrewMember;

@@ -3,7 +3,7 @@
     {
       "id": "1",
       "username": "pakhsh_manager",
-      "password": "$2b$10$Xa5v97m68BFEGqZqvp.Fau8yrDqUpeG9nJAwdmP.n1CmAoKAK2bPy",
+      "password": "$2b$10$arPqfwJjPrIlkjPXFTk8POpYnhFdfT.hbBjfESVImRiVqKfb1Gw8K",
       "name": "مدیر پخش تست",
       "email": "pakhsh@test.com",
       "phone": "09123456789",
@@ -12,7 +12,7 @@
     {
       "name": "مهدی فرمانزاده",
       "username": "pakhsh",
-      "password": "$2b$10$Xa5v97m68BFEGqZqvp.Fau8yrDqUpeG9nJAwdmP.n1CmAoKAK2bPy",
+      "password": "$2b$10$arPqfwJjPrIlkjPXFTk8POpYnhFdfT.hbBjfESVImRiVqKfb1Gw8K",
       "email": "",
       "phone": "09129339309",
       "workplace": "پخش هیسپان و پرس",

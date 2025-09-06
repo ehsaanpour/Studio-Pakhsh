@@ -49,6 +49,7 @@ const additionalServiceItemsMap: Record<AdditionalService, string> = {
   live_communication: 'ارتباط زنده',
   stream: 'استریم',
   live_program: 'برنامه زنده',
+  simultaneous_translator: 'مترجم همزمان',
 };
 
 const getAdditionalServiceLabel = (serviceId: AdditionalService): string => {
