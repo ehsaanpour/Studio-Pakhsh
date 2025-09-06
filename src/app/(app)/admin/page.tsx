@@ -530,7 +530,26 @@ export default function AdminPanelPage() {
           <p><strong>تاریخ رزرو:</strong> <span className='text-red-500'>نامشخص</span></p>
         )}
         <p><strong>استودیو:</strong> {getStudioLabel(request.studio)}</p>
-        {request.studioServices && <p><strong>نوع سرویس:</strong> {getServiceTypeLabel(request.studioServices.serviceType)} ({request.studioServices.numberOfDays} روز, {request.studioServices.hoursPerDay} ساعت/روز)</p>}
+        {request.studioServices && (
+          <>
+            <p><strong>نوع سرویس:</strong> {getServiceTypeLabel(request.studioServices.serviceType)} ({request.studioServices.numberOfDays} روز, {request.studioServices.hoursPerDay} ساعت/روز)</p>
+            <div className="mt-2 p-2 bg-blue-50 rounded-lg">
+              <p className="text-xs text-blue-700">
+                <strong>نوع تایید مورد نیاز:</strong> {request.studioServices.serviceType === 'with_crew' ? 'تایید ادمین + تایید پخش' : 'فقط تایید ادمین'}
+              </p>
+              {request.studioServices.serviceType === 'with_crew' && (
+                <div className="flex gap-2 mt-1">
+                  <span className={`text-xs px-2 py-1 rounded ${request.adminConfirmedAt ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-600'}`}>
+                    ادمین: {request.adminConfirmedAt ? '✅ تایید شده' : '⏳ در انتظار'}
+                  </span>
+                  <span className={`text-xs px-2 py-1 rounded ${request.pakhshConfirmedAt ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-600'}`}>
+                    پخش: {request.pakhshConfirmedAt ? '✅ تایید شده' : '⏳ در انتظار'}
+                  </span>
+                </div>
+              )}
+            </div>
+          </>
+        )}
         {request.personalInfo && (
           <>
             <p><strong>تماس مهمان:</strong> {request.personalInfo.phoneNumber} - {request.personalInfo.emailAddress}</p>

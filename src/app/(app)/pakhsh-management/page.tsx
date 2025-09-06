@@ -133,10 +133,13 @@ export default function PakhshManagementPage() {
     loadRequests();
   }, [isPakhshManager, router, toast]);
 
-  // Filter requests that need pakhsh confirmation (admin_confirmed or ones that need dual confirmation)
+  // Filter requests that need pakhsh confirmation (only with_crew service type)
   const pendingPakhshRequests = allRequests.filter(req => 
-    req.status === 'admin_confirmed' || 
-    (req.status === 'new' || req.status === 'read')
+    req.studioServices.serviceType === 'with_crew' && (
+      req.status === 'admin_confirmed' || 
+      req.status === 'pakhsh_confirmed' ||
+      (req.status === 'new' || req.status === 'read')
+    )
   );
   
   const finalizedSystemRequests = allRequests.filter(req => req.status === 'confirmed' || req.status === 'finalized');
@@ -215,7 +218,24 @@ export default function PakhshManagementPage() {
           <p><strong>تاریخ رزرو:</strong> <span className='text-red-500'>نامشخص</span></p>
         )}
         <p><strong>استودیو:</strong> {getStudioLabel(request.studio)}</p>
-        {request.studioServices && <p><strong>نوع سرویس:</strong> {getServiceTypeLabel(request.studioServices.serviceType)} ({request.studioServices.numberOfDays} روز, {request.studioServices.hoursPerDay} ساعت/روز)</p>}
+        {request.studioServices && (
+          <>
+            <p><strong>نوع سرویس:</strong> {getServiceTypeLabel(request.studioServices.serviceType)} ({request.studioServices.numberOfDays} روز, {request.studioServices.hoursPerDay} ساعت/روز)</p>
+            <div className="mt-2 p-2 bg-blue-50 rounded-lg">
+              <p className="text-xs text-blue-700">
+                <strong>وضعیت تایید:</strong> استودیو با عوامل پخش (نیاز به تایید ادمین + پخش)
+              </p>
+              <div className="flex gap-2 mt-1">
+                <span className={`text-xs px-2 py-1 rounded ${request.adminConfirmedAt ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-600'}`}>
+                  ادمین: {request.adminConfirmedAt ? '✅ تایید شده' : '⏳ در انتظار'}
+                </span>
+                <span className={`text-xs px-2 py-1 rounded ${request.pakhshConfirmedAt ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-600'}`}>
+                  پخش: {request.pakhshConfirmedAt ? '✅ تایید شده' : '⏳ در انتظار'}
+                </span>
+              </div>
+            </div>
+          </>
+        )}
         {request.personalInfo && (
           <>
             <p><strong>تماس مهمان:</strong> {request.personalInfo.phoneNumber} - {request.personalInfo.emailAddress}</p>
@@ -228,7 +248,7 @@ export default function PakhshManagementPage() {
            <p><strong>خدمات پذیرایی:</strong> {request.cateringServices.map(getCateringServiceLabel).join('، ')}</p>
         )}
       </CardContent>
-      {(request.status === 'admin_confirmed' || request.status === 'new' || request.status === 'read') && (
+      {(request.status === 'admin_confirmed' || request.status === 'new' || request.status === 'read' || request.status === 'pakhsh_confirmed') && !request.pakhshConfirmedAt && (
         <CardFooter className="flex justify-end gap-2">
           <Button asChild size="sm" variant="outline">
             <Link href={`/producer/edit-request/${request.id}`}>

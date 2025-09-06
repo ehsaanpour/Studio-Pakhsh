@@ -82,18 +82,42 @@ export async function updateReservationStatusServer(requestId: string, newStatus
       reservations[index].status = newStatus;
       reservations[index].updatedAt = currentDate;
       
-      // Handle dual confirmation logic
+      // Determine if dual approval is required based on studio service type
+      const requiresDualApproval = reservation.studioServices.serviceType === 'with_crew';
+      
+      // Handle confirmation logic based on service type
       if (newStatus === 'admin_confirmed') {
         reservations[index].adminConfirmedAt = currentDate;
-        // Check if pakhsh is also confirmed, if so, set to confirmed
-        if (reservation.pakhshConfirmedAt) {
+        
+        if (requiresDualApproval) {
+          // Studio with broadcast crew - needs both admin and pakhsh approval
+          if (reservation.pakhshConfirmedAt) {
+            // Both approvals completed
+            reservations[index].status = 'confirmed';
+          } else {
+            // Keep status as admin_confirmed, waiting for pakhsh approval
+            reservations[index].status = 'admin_confirmed';
+          }
+        } else {
+          // Studio space with one technical staff - only admin approval needed
           reservations[index].status = 'confirmed';
         }
       } else if (newStatus === 'pakhsh_confirmed') {
         reservations[index].pakhshConfirmedAt = currentDate;
-        // Check if admin is also confirmed, if so, set to confirmed
-        if (reservation.adminConfirmedAt) {
-          reservations[index].status = 'confirmed';
+        
+        if (requiresDualApproval) {
+          // Studio with broadcast crew - needs both admin and pakhsh approval
+          if (reservation.adminConfirmedAt) {
+            // Both approvals completed
+            reservations[index].status = 'confirmed';
+          } else {
+            // Keep status as pakhsh_confirmed, waiting for admin approval
+            reservations[index].status = 'pakhsh_confirmed';
+          }
+        } else {
+          // For without_crew, pakhsh approval alone is not sufficient - this should not normally happen
+          // but we handle it gracefully by keeping the status as pakhsh_confirmed
+          reservations[index].status = 'pakhsh_confirmed';
         }
       }
       
